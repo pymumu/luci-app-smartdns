@@ -14,10 +14,12 @@
 -- You should have received a copy of the GNU General Public License
 -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-require ("nixio.fs")
-require ("luci.http")
-require ("luci.dispatcher")
-require ("nixio.fs")
+local m, s, o
+local custom, addr
+
+local fs = require ("nixio.fs")
+local http = require ("luci.http")
+local dispatcher = require ("luci.dispatcher")
 
 m = Map("smartdns")
 m.title	= translate("SmartDNS Server")
@@ -202,12 +204,12 @@ custom.template = "cbi/tvalue"
 custom.rows = 20
 
 function custom.cfgvalue(self, section)
-	return nixio.fs.readfile("/etc/smartdns/custom.conf")
+	return fs.readfile("/etc/smartdns/custom.conf")
 end
 
 function custom.write(self, section, value)
 	value = value:gsub("\r\n?", "\n")
-	nixio.fs.writefile("/etc/smartdns/custom.conf", value)
+	fs.writefile("/etc/smartdns/custom.conf", value)
 end
 
 o = s:taboption("custom", Flag, "coredump", translate("Generate Coredump"), translate("Generate Coredump file when smartdns crash, coredump file is located at /tmp/smartdns.xxx.core."))
@@ -224,7 +226,7 @@ s = m:section(TypedSection, "server", translate("Upstream Servers"), translate("
 s.anonymous = true
 s.addremove = true
 s.template = "cbi/tblsection"
-s.extedit  = luci.dispatcher.build_url("admin/services/smartdns/upstream/%s")
+s.extedit  = dispatcher.build_url("admin/services/smartdns/upstream/%s")
 
 ---- enable flag
 o = s:option(Flag, "enabled", translate("Enable"), translate("Enable"))
@@ -274,12 +276,12 @@ addr.template = "cbi/tvalue"
 addr.rows = 20
 
 function addr.cfgvalue(self, section)
-	return nixio.fs.readfile("/etc/smartdns/address.conf")
+	return fs.readfile("/etc/smartdns/address.conf")
 end
 
 function addr.write(self, section, value)
 	value = value:gsub("\r\n?", "\n")
-	nixio.fs.writefile("/etc/smartdns/address.conf", value)
+	fs.writefile("/etc/smartdns/address.conf", value)
 end
 
 -- IP Blacklist
@@ -296,12 +298,12 @@ addr.template = "cbi/tvalue"
 addr.rows = 20
 
 function addr.cfgvalue(self, section)
-	return nixio.fs.readfile("/etc/smartdns/blacklist-ip.conf")
+	return fs.readfile("/etc/smartdns/blacklist-ip.conf")
 end
 
 function addr.write(self, section, value)
 	value = value:gsub("\r\n?", "\n")
-	nixio.fs.writefile("/etc/smartdns/blacklist-ip.conf", value)
+	fs.writefile("/etc/smartdns/blacklist-ip.conf", value)
 end
 
 -- Doman addresss
@@ -314,7 +316,7 @@ o.title = translate("SmartDNS official website")
 o.inputtitle = translate("open website")
 o.inputstyle = "apply"
 o.write = function()
-	luci.http.redirect("https://pymumu.github.io/smartdns")
+	http.redirect("https://pymumu.github.io/smartdns")
 end
 
 o = s:option(Button, "Donate")
@@ -322,7 +324,7 @@ o.title = translate("Donate to smartdns")
 o.inputtitle = translate("Donate")
 o.inputstyle = "apply"
 o.write = function()
-	luci.http.redirect("https://pymumu.github.io/smartdns/#donate")
+	http.redirect("https://pymumu.github.io/smartdns/#donate")
 end
 
 return m

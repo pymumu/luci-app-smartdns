@@ -14,13 +14,16 @@
 -- You should have received a copy of the GNU General Public License
 -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+local m, s, o
+
+local http = require ("luci.http")
 local sid = arg[1]
 
 m = Map("smartdns", "%s - %s" %{translate("SmartDNS Server"), translate("Upstream DNS Server Configuration")})
 m.redirect = luci.dispatcher.build_url("admin/services/smartdns")
 
 if m.uci:get("smartdns", sid) ~= "server" then
-	luci.http.redirect(m.redirect)
+	http.redirect(m.redirect)
 	return
 end
 
