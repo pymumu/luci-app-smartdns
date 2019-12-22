@@ -44,7 +44,7 @@ o.rempty      = false
 o = s:taboption("settings", Value, "server_name", translate("Server Name"), translate("Smartdns server name"))
 o.default     = "smartdns"
 o.datatype    = "hostname"
-o.rempty      = false
+o.rempty      = true
 
 ---- Port
 o = s:taboption("settings", Value, "port", translate("Local Port"), translate("Smartdns local server port"))
@@ -262,7 +262,7 @@ o:value("https", translate("https"))
 o.default     = "udp"
 o.rempty      = false
 
--- Doman addresss
+-- Domain Address
 s = m:section(TypedSection, "smartdns", translate("Domain Address"), 
 	translate("Set Specific domain ip address."))
 s.anonymous = true
@@ -306,7 +306,7 @@ function addr.write(self, section, value)
 	fs.writefile("/etc/smartdns/blacklist-ip.conf", value)
 end
 
--- Doman addresss
+-- Technical Support
 s = m:section(TypedSection, "smartdns", translate("Technical Support"), 
 	translate("If you like this software, please buy me a cup of coffee."))
 s.anonymous = true
