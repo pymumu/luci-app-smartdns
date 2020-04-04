@@ -14,12 +14,10 @@
 -- You should have received a copy of the GNU General Public License
 -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-local m, s, o
-local custom, addr
-
-local fs = require ("nixio.fs")
-local http = require ("luci.http")
-local dispatcher = require ("luci.dispatcher")
+require ("nixio.fs")
+require ("luci.http")
+require ("luci.dispatcher")
+require ("nixio.fs")
 
 m = Map("smartdns")
 m.title	= translate("SmartDNS Server")
@@ -42,9 +40,9 @@ o.rempty      = false
 
 ---- server name
 o = s:taboption("settings", Value, "server_name", translate("Server Name"), translate("Smartdns server name"))
-o.placeholder = "smartdns"
+o.default     = "smartdns"
 o.datatype    = "hostname"
-o.rempty      = true
+o.rempty      = false
 
 ---- Port
 o = s:taboption("settings", Value, "port", translate("Local Port"), translate("Smartdns local server port"))
@@ -79,6 +77,15 @@ end
 
 ---- Domain prefetch load 
 o = s:taboption("settings", Flag, "prefetch_domain", translate("Domain prefetch"), translate("Enable domain prefetch, accelerate domain response speed."))
+o.rmempty     = false
+o.default     = o.disabled
+o.cfgvalue    = function(...)
+    return Flag.cfgvalue(...) or "0"
+end
+
+---- Domain Serve expired
+o = s:taboption("settings", Flag, "serve_expired", translate("Serve expired"), 
+	translate("Attempts to serve old responses from cache with a TTL of 0 in the response without waiting for the actual resolution to finish."))
 o.rmempty     = false
 o.default     = o.disabled
 o.cfgvalue    = function(...)
@@ -121,8 +128,8 @@ o.rempty      = false
 
 ---- Port
 o = s:taboption("seconddns", Value, "seconddns_port", translate("Local Port"), translate("Smartdns local server port"))
-o.placeholder = 7053
-o.default     = 7053
+o.placeholder = 6553
+o.default     = 6553
 o.datatype    = "port"
 o.rempty      = false
 
@@ -134,19 +141,19 @@ o.cfgvalue    = function(...)
     return Flag.cfgvalue(...) or "1"
 end
 
-o = s:taboption("seconddns", Flag, "seconddns_no_speed_check", translate("Skip Speed Check"), translate("Do not check speed."))
-o.rmempty     = false
-o.default     = o.disabled
-o.cfgvalue    = function(...)
-    return Flag.cfgvalue(...) or "0"
-end
-
 ---- dns server group
 o = s:taboption("seconddns", Value, "seconddns_server_group", translate("Server Group"), translate("Query DNS through specific dns server group, such as office, home."))
 o.rmempty     = true
 o.placeholder = "default"
 o.datatype    = "hostname"
 o.rempty      = true
+
+o = s:taboption("seconddns", Flag, "seconddns_no_speed_check", translate("Skip Speed Check"), translate("Do not check speed."))
+o.rmempty     = false
+o.default     = o.disabled
+o.cfgvalue    = function(...)
+    return Flag.cfgvalue(...) or "0"
+end
 
 ---- skip address rules
 o = s:taboption("seconddns", Flag, "seconddns_no_rule_addr", translate("Skip Address Rules"), translate("Skip address rules."))
@@ -180,7 +187,7 @@ o.cfgvalue    = function(...)
     return Flag.cfgvalue(...) or "0"
 end
 
-o = s:taboption("seconddns", Flag, "seconddns_no_dualstack_selection", translate("Skip Dualstack Selection"), translate("Skip Sualstack Selection."))
+o = s:taboption("seconddns", Flag, "seconddns_no_dualstack_selection", translate("Skip Dualstack Selection"), translate("Skip Dualstack Selection."))
 o.rmempty     = false
 o.default     = o.disabled
 o.cfgvalue    = function(...)
@@ -189,6 +196,14 @@ end
 
 ---- skip cache
 o = s:taboption("seconddns", Flag, "seconddns_no_cache", translate("Skip Cache"), translate("Skip Cache."))
+o.rmempty     = false
+o.default     = o.disabled
+o.cfgvalue    = function(...)
+    return Flag.cfgvalue(...) or "0"
+end
+
+---- Force AAAA SOA
+o = s:taboption("seconddns", Flag, "force_aaaa_soa", translate("Force AAAA SOA"), translate("Force AAAA SOA."))
 o.rmempty     = false
 o.default     = o.disabled
 o.cfgvalue    = function(...)
@@ -204,12 +219,12 @@ custom.template = "cbi/tvalue"
 custom.rows = 20
 
 function custom.cfgvalue(self, section)
-	return fs.readfile("/etc/smartdns/custom.conf")
+	return nixio.fs.readfile("/etc/smartdns/custom.conf")
 end
 
 function custom.write(self, section, value)
 	value = value:gsub("\r\n?", "\n")
-	fs.writefile("/etc/smartdns/custom.conf", value)
+	nixio.fs.writefile("/etc/smartdns/custom.conf", value)
 end
 
 o = s:taboption("custom", Flag, "coredump", translate("Generate Coredump"), translate("Generate Coredump file when smartdns crash, coredump file is located at /tmp/smartdns.xxx.core."))
@@ -226,7 +241,7 @@ s = m:section(TypedSection, "server", translate("Upstream Servers"), translate("
 s.anonymous = true
 s.addremove = true
 s.template = "cbi/tblsection"
-s.extedit  = dispatcher.build_url("admin/services/smartdns/upstream/%s")
+s.extedit  = luci.dispatcher.build_url("admin/services/smartdns/upstream/%s")
 
 ---- enable flag
 o = s:option(Flag, "enabled", translate("Enable"), translate("Enable"))
@@ -262,13 +277,14 @@ o:value("https", translate("https"))
 o.default     = "udp"
 o.rempty      = false
 
--- Domain Address
-s = m:section(TypedSection, "smartdns", translate("Domain Address"), 
-	translate("Set Specific domain ip address."))
-s.anonymous = true
+s = m:section(TypedSection, "smartdns", translate("Advanced Settings"), translate("Advanced Settings"));
+s.anonymous = true;
 
----- address
-addr = s:option(Value, "address",
+s:tab("domain-address", translate("Domain Address"), translate("Set Specific domain ip address."));
+s:tab("blackip-list", translate("IP Blacklist"), translate("Set Specific ip blacklist."));
+
+-- Doman addresss
+addr = s:taboption("domain-address", Value, "address",
 	translate(""), 
 	translate("Specify an IP address to return for any host in the given domains, Queries in the domains are never forwarded and always replied to with the specified IP address which may be IPv4 or IPv6."))
 
@@ -276,21 +292,16 @@ addr.template = "cbi/tvalue"
 addr.rows = 20
 
 function addr.cfgvalue(self, section)
-	return fs.readfile("/etc/smartdns/address.conf")
+	return nixio.fs.readfile("/etc/smartdns/address.conf")
 end
 
 function addr.write(self, section, value)
 	value = value:gsub("\r\n?", "\n")
-	fs.writefile("/etc/smartdns/address.conf", value)
+	nixio.fs.writefile("/etc/smartdns/address.conf", value)
 end
 
 -- IP Blacklist
-s = m:section(TypedSection, "smartdns", translate("IP Blacklist"), 
-	translate("Set Specific ip blacklist."))
-s.anonymous = true
-
----- blacklist
-addr = s:option(Value, "blacklist_ip",
+addr = s:taboption("blackip-list", Value, "blacklist_ip",
 	translate(""), 
 	translate("Configure IP blacklists that will be filtered from the results of specific DNS server."))
 
@@ -298,12 +309,12 @@ addr.template = "cbi/tvalue"
 addr.rows = 20
 
 function addr.cfgvalue(self, section)
-	return fs.readfile("/etc/smartdns/blacklist-ip.conf")
+	return nixio.fs.readfile("/etc/smartdns/blacklist-ip.conf")
 end
 
 function addr.write(self, section, value)
 	value = value:gsub("\r\n?", "\n")
-	fs.writefile("/etc/smartdns/blacklist-ip.conf", value)
+	nixio.fs.writefile("/etc/smartdns/blacklist-ip.conf", value)
 end
 
 -- Technical Support
@@ -316,7 +327,7 @@ o.title = translate("SmartDNS official website")
 o.inputtitle = translate("open website")
 o.inputstyle = "apply"
 o.write = function()
-	http.redirect("https://pymumu.github.io/smartdns")
+	luci.http.redirect("https://pymumu.github.io/smartdns")
 end
 
 o = s:option(Button, "Donate")
@@ -324,7 +335,7 @@ o.title = translate("Donate to smartdns")
 o.inputtitle = translate("Donate")
 o.inputstyle = "apply"
 o.write = function()
-	http.redirect("https://pymumu.github.io/smartdns/#donate")
+	luci.http.redirect("https://pymumu.github.io/smartdns/#donate")
 end
 
 return m
