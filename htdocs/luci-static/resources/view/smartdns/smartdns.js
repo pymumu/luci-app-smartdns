@@ -503,12 +503,6 @@ return view.extend({
 		o.default = '5';
 		o.depends('enable_auto_update', '1');
 
-		o = s.taboption('files', form.ListValue, 'auto_update_min_time', _("Update Interval (min)"));
-		for (var i = 0; i < 60; i++)
-			o.value(i, i + ':00');
-		o.default = '';
-		o.depends('enable_auto_update', '1');
-
 		o = s.taboption("files", form.FileUpload, "upload_conf_file", _("Upload Config File"),
 			_("Upload smartdns config file to /etc/smartdns/conf.d"));
 		o.rmempty = true
