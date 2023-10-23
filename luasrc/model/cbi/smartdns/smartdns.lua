@@ -676,6 +676,12 @@ o.rmempty = true
 o.default = o.disabled
 o.rempty = true
 
+o = s:option(ListValue, "auto_update_day_time", translate("Update time (every day)"))
+for (var i = 0; i < 24; i++)
+	o.value(i, i + ":00")
+o.default = "5"
+o.depends("enable_auto_update", "1")
+
 o = s:option(FileUpload, "upload_conf_file", translate("Upload Config File"),
     translate("Upload smartdns config file to /etc/smartdns/conf.d"))
 o.rmempty = true
