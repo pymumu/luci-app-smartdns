@@ -919,3 +919,37 @@ msgstr "类型"
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:683
 msgid "udp"
 msgstr "udp"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:63
+msgid "Collecting data ..."
+msgstr "数据收集中..."
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:73
+msgid "Clear Logs..."
+msgstr "清除日志..."
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:76
+msgid "Logs cleared successfully!"
+msgstr "日志清除成功！"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:82
+msgid "Log is clean."
+msgstr "日志已清除。"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:79
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:89
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:93
+msgid "Clear Logs"
+msgstr "清除日志"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:122
+msgid "Refresh every %s seconds."
+msgstr "每 %s 秒刷新。"
+
+#: applications/luci-app-smartdns/root/usr/share/luci/menu.d/luci-app-smartdns.json:14
+msgid "Configuration"
+msgstr "配置"
+
+#: applications/luci-app-smartdns/root/usr/share/luci/menu.d/luci-app-smartdns.json:22
+msgid "Logs"
+msgstr "日志"
