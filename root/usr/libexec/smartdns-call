@@ -9,7 +9,7 @@ list_file="${log_file:-/var/log/smartdns/smartdns.log}"
 case "$action" in
         tail)
         # 读取日志
-		      tail -n 5000 "$list_file"
+		tail -n 5000 "$list_file"
 	      ;;
 	      clear_log)
 	      # 清空日志
