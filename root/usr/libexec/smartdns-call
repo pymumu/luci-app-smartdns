@@ -1,0 +1,18 @@
+#!/bin/sh
+
+action=$1
+shift
+
+log_file="$(uci -q get smartdns.@smartdns[0].log_file)"
+list_file="${log_file:-/var/log/smartdns/smartdns.log}"
+
+case "$action" in
+        tail)
+        # 读取日志
+		      tail -n 5000 "$list_file"
+	      ;;
+	      clear_log)
+	      # 清空日志
+	        > $list_file
+	      ;;
+esac
