@@ -119,9 +119,9 @@ return view.extend({
 			E('button', {
 				'class': 'cbi-button cbi-button-danger',
 				'click': ui.createHandlerFn(this, function () {
-						window.location.href = "smartdns/smartdns"
+						window.location.href = "smartdns"
 				})
-			}, _('Back SMARTDNS'))
+			}, _('Back SmartDNS'))
 		]);
 
 		return E('div', { 'class': 'cbi-map' }, [
