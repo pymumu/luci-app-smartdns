@@ -964,3 +964,37 @@ msgstr "类型"
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:710
 msgid "udp"
 msgstr "udp"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:74
+msgid "Clear Logs..."
+msgstr "清除日志..."
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:77
+msgid "Logs cleared successfully!"
+msgstr "日志清除成功！"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:83
+msgid "Log is clean."
+msgstr "日志已清除。"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:80
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:90
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:94
+msgid "Clear Logs"
+msgstr "清除日志"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:87
+msgid "Failed to clear log."
+msgstr "清除日志失败。"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:109
+msgid "Log file does not exist."
+msgstr "日志文件不存在。"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:124
+msgid "Back SmartDNS"
+msgstr "返回 SmartDNS"
+
+#: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/log.js:133
+msgid "Refresh every %s seconds."
+msgstr "每 %s 秒刷新。"
