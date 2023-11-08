@@ -79,7 +79,7 @@ return view.extend({
 								button.disabled = false;
 								button.textContent = _('Clear Logs');
 							}, 5000);
-							// 立即刷新日志显示框
+							// Immediately refresh log display box
 							var log = E('pre', { 'wrap': 'pre' }, [_('Log is clean.')]);
 							dom.content(log_textarea, log);
 						})
