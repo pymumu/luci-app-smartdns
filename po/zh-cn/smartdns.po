@@ -197,13 +197,13 @@ msgid "Enable TCP DNS Server"
 msgstr "启用TCP服务器。"
 
 msgid "Enable daily(week) auto update."
-msgstr "启用每天（每周）自动更新"
+msgstr "启用每天（每周）自动更新。"
 
 msgid "Enable DOH DNS Server"
-msgstr "启用DOH服务器"
+msgstr "启用DOH服务器。"
 
 msgid "Enable DOT DNS Server"
-msgstr "启用DOT服务器"
+msgstr "启用DOT服务器。"
 
 msgid "Update Time (Every Week)"
 msgstr "更新时间(每周)"
