@@ -61,8 +61,16 @@ function smartdnsRenderStatus(res) {
 	var smartdnsEnable = uci.get_first('smartdns', 'smartdns', 'enabled');
 	var dnsmasqServer = uci.get_first('dhcp', 'dnsmasq', 'server');
 
+	var uiEnable = uci.get_first('smartdns', 'smartdns', 'ui') || "0";
+	var uiPort = uci.get_first('smartdns', 'smartdns', 'ui_port') || "6080";
+
 	if (isRunning) {
 		renderHTML += "<span style=\"color:green;font-weight:bold\">SmartDNS - " + _("RUNNING") + "</span>";
+
+		if (uiEnable === '1') {
+			var uiLink = "http://" + window.location.hostname + ":" + uiPort + "/";
+			renderHTML += "<a class=\"cbi-button cbi-button-action\" style=\"margin-left: 10px;\" href=\"" + uiLink + "\" target=\"_blank\">" + _("Open the WebUI") + "</a>";
+		}
 	} else {
 		renderHTML += "<span style=\"color:red;font-weight:bold\">SmartDNS - " + _("NOT RUNNING") + "</span>";
 		if (smartdnsEnable === '1') {
@@ -84,17 +92,28 @@ function smartdnsRenderStatus(res) {
 
 	return renderHTML;
 }
+
+function isSmartdnsUiAvailable() {
+	return fs.exec_direct('/bin/ls', ['-l', '/usr/lib/libsmartdns_ui.so']).then(function (res) {
+		return res && res.code !== "";
+	}).catch(function () {
+		return false;
+	});
+}
+
 return view.extend({
 	load: function () {
 		return Promise.all([
 			uci.load('dhcp'),
 			uci.load('smartdns'),
+			isSmartdnsUiAvailable()
 		]);
 	},
 	render: function (stats) {
 		var m, s, o;
 		var ss, so;
 		var servers, download_files;
+		var hasUi = stats[2];
 
 		m = new form.Map('smartdns', _('SmartDNS'));
 		m.title = _("SmartDNS Server");
@@ -165,6 +184,31 @@ return view.extend({
 		o = s.taboption("settings", form.Flag, "auto_set_dnsmasq", _("Automatically Set Dnsmasq"), _("Automatically set as upstream of dnsmasq when port changes."));
 		o.rmempty = false;
 		o.default = o.enabled;
+
+		//WebUI
+		if (hasUi) {
+			o = s.taboption("settings", form.Flag, "ui", _("Enable WebUI"), _("Enable or disable smartdns webui plugin."));
+			o.rmempty = false;
+			o.default = o.disabled;
+
+			o = s.taboption("settings", form.Value, "ui_port", _("WebUI Port"), _("WebUI server port."));
+			o.placeholder = 6080;
+			o.datatype = "port";
+			o.rempty = false;
+			o.depends('ui', '1');
+
+			o = s.taboption("settings", form.Value, "ui_data_dir", _("WebUI Data Dir"), _("Directory for storing the webui database."));
+			o.placeholder = "/var/lib/smartdns";
+			o.datatype = "string";
+			o.rempty = false;
+			o.depends('ui', '1');
+
+			o = s.taboption("settings", form.Value, "ui_log_max_age", _("WebUI Log Retention"), _("Number of days to retain webui logs."));
+			o.placeholder = 30;
+			o.datatype = "uinteger";
+			o.rempty = false;
+			o.depends('ui', '1');
+		}
 
 		///////////////////////////////////////
 		// advanced settings;
