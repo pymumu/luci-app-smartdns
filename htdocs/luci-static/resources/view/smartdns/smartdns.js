@@ -94,11 +94,18 @@ function smartdnsRenderStatus(res) {
 }
 
 function isSmartdnsUiAvailable() {
-	return fs.stat('/usr/lib/libsmartdns_ui.so').then(function (res) {
-		return res && res.type === 'file';
-	}).catch(function () {
-		return false;
-	});
+    const checkFile = (path) => {
+        return fs.stat(path).then(
+            (res) => res && res.type === 'file',
+            () => false
+        );
+    };
+    return Promise.all([
+        checkFile('/usr/lib/smartdns/libsmartdns_ui.so'),
+        checkFile('/usr/lib/libsmartdns_ui.so')
+    ]).then((results) => {
+        return results.some((result) => result);
+    });
 }
 
 return view.extend({
@@ -190,6 +197,18 @@ return view.extend({
 			o = s.taboption("settings", form.Flag, "ui", _("Enable WebUI"), _("Enable or disable smartdns webui plugin."));
 			o.rmempty = false;
 			o.default = o.disabled;
+
+			o = s.taboption("settings", form.Value, "ui_plugin", _("WebUI Plugin Dir"), _("Directory for Plugin."));
+			o.placeholder = "/usr/lib/libsmartdns_ui.so";
+			o.datatype = "string";
+			o.rempty = false;
+			o.depends('ui', '1');
+
+			o = s.taboption("settings", form.Value, "ui_wwwroot", _("WebUI server Root Dir"), _("Root Directory for WebUI server."));
+			o.placeholder = "/usr/share/smartdns/wwwroot";
+			o.datatype = "string";
+			o.rempty = false;
+			o.depends('ui', '1');
 
 			o = s.taboption("settings", form.Value, "ui_port", _("WebUI Port"), _("WebUI server port."));
 			o.placeholder = 6080;
