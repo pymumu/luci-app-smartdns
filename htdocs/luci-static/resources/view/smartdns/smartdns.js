@@ -94,7 +94,7 @@ function smartdnsRenderStatus(res) {
 }
 
 function isSmartdnsUiAvailable() {
-	return fs.stat('/usr/lib/libsmartdns_ui.so').then(function (res) {
+	return fs.stat('/usr/lib/smartdns_ui.so').then(function (res) {
 		return res && res.type === 'file';
 	}).catch(function () {
 		return false;
