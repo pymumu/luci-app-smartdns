@@ -68,7 +68,9 @@ function smartdnsRenderStatus(res) {
 		renderHTML += "<span style=\"color:green;font-weight:bold\">SmartDNS - " + _("RUNNING") + "</span>";
 
 		if (uiEnable === '1') {
-			var uiLink = "http://" + window.location.hostname + ":" + uiPort + "/";
+			var protocol = window.location.protocol;
+			var hostname = window.location.hostname;
+			var uiLink = protocol + "//" + hostname + ":" + uiPort;
 			renderHTML += "&#160; <a class=\"btn cbi-button\" style=\"margin-left: 10px; background-color: black; color: white; border-color: #333;\" href=\"" + uiLink + "\" target=\"_blank\">" + _("Open the WebUI") + "</a>";
 		}
 	} else {
