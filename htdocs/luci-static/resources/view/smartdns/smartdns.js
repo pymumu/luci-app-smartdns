@@ -789,6 +789,15 @@ return view.extend({
 		o.rmempty = true;
 		o.default = o.disabled;
 
+		o = s.taboption("custom", form.DummyValue, "log_settings", "");
+		o.renderWidget = function () {
+			return E('div', {
+				'style': `font-size: 1.5em;
+					font-weight: bold;
+					color: #000;`
+				}, [ _("Log Settings") ]);
+		};
+
 		o = s.taboption("custom", form.ListValue, "log_level", _("Log Level"));
 		o.rmempty = true;
 		o.default = "";

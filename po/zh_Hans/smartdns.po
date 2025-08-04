@@ -764,6 +764,9 @@ msgstr "日志级别"
 msgid "Log Output Mode"
 msgstr "日志输出模式"
 
+msgid "Log Settings"
+msgstr "日志设置"
+
 #: smartdns.js:805 smartdns.js:846
 msgid "file"
 msgstr "文件"
