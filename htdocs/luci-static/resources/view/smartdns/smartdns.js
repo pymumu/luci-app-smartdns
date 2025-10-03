@@ -1038,6 +1038,13 @@ return view.extend({
 			return true;
 		}
 
+		// fallback
+		o = s.taboption("advanced", form.Flag, "fallback", _("Fallback"),
+			_("Mark this server as a fallback server, use it only when default servers fail."))
+		o.default = o.disabled
+		o.rmempty = true
+		o.modalonly = true    
+
 		// other args
 		o = s.taboption("advanced", form.Value, "addition_arg", _("Additional Server Args"),
 			_("Additional Args for upstream dns servers"))
