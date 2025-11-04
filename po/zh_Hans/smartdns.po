@@ -315,12 +315,12 @@ msgid "Server certificate key file password."
 msgstr "服务器证书私钥文件密码。"
 
 #: smartdns.js:318
-msgid "IPV6 Server"
-msgstr "IPV6服务器"
+msgid "IPv6 Server"
+msgstr "IPv6服务器"
 
 #: smartdns.js:318
-msgid "Enable IPV6 DNS Server"
-msgstr "启用IPV6服务器。"
+msgid "Enable IPv6 DNS Server"
+msgstr "启用IPv6服务器。"
 
 #: smartdns.js:323
 msgid "Bind Device"
@@ -343,8 +343,8 @@ msgid "Dual-stack IP Selection"
 msgstr "双栈IP优选"
 
 #: smartdns.js:335 smartdns.js:1169 smartdns.js:1328 smartdns.js:1502
-msgid "Enable IP selection between IPV4 and IPV6"
-msgstr "启用 IPV4 和 IPV6 间的 IP 优选策略。"
+msgid "Enable IP selection between IPv4 and IPv6"
+msgstr "启用 IPv4 和 IPv6 间的 IP 优选策略。"
 
 #: smartdns.js:340
 msgid "Domain prefetch"
@@ -399,12 +399,12 @@ msgstr "使用mDNS协议解析本地网络主机名。"
 #: smartdns.js:371 smartdns.js:589 smartdns.js:1174 smartdns.js:1336
 #: smartdns.js:1550
 msgid "Force AAAA SOA"
-msgstr "停用IPV6地址解析"
+msgstr "停用IPv6地址解析"
 
 #: smartdns.js:371 smartdns.js:589 smartdns.js:1174 smartdns.js:1336
 #: smartdns.js:1550
 msgid "Force AAAA SOA."
-msgstr "停用IPV6地址解析。"
+msgstr "停用IPv6地址解析。"
 
 #: smartdns.js:376 smartdns.js:594 smartdns.js:1179
 msgid "Force HTTPS SOA"
