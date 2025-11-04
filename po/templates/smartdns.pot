@@ -296,11 +296,11 @@ msgid "Server certificate key file password."
 msgstr ""
 
 #: smartdns.js:318
-msgid "IPV6 Server"
+msgid "IPv6 Server"
 msgstr ""
 
 #: smartdns.js:318
-msgid "Enable IPV6 DNS Server"
+msgid "Enable IPv6 DNS Server"
 msgstr ""
 
 #: smartdns.js:323
@@ -324,7 +324,7 @@ msgid "Dual-stack IP Selection"
 msgstr ""
 
 #: smartdns.js:335 smartdns.js:1169 smartdns.js:1328 smartdns.js:1502
-msgid "Enable IP selection between IPV4 and IPV6"
+msgid "Enable IP selection between IPv4 and IPv6"
 msgstr ""
 
 #: smartdns.js:340
