@@ -265,11 +265,11 @@ msgstr ""
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:241
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1008
-msgid "Enable IP selection between IPV4 and IPV6"
+msgid "Enable IP selection between IPv4 and IPv6"
 msgstr "Activar la selección de IP entre IPv4 e IPv6"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:224
-msgid "Enable IPV6 DNS Server"
+msgid "Enable IPv6 DNS Server"
 msgstr "Activar servidor DNS IPv6"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:219
@@ -384,7 +384,7 @@ msgid "IP Blacklist Filtering"
 msgstr "Filtrado de la lista negra de IP"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:224
-msgid "IPV6 Server"
+msgid "IPv6 Server"
 msgstr "Servidor IPv6"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:440
@@ -947,10 +947,10 @@ msgstr "udp"
 #~ msgid "Sets the server name indication for query."
 #~ msgstr "Establece la indicación del nombre del servidor para la consulta."
 
-#~ msgid "IPV4 53 Port Redirect Failure"
+#~ msgid "IPv4 53 Port Redirect Failure"
 #~ msgstr "Error de reenvío de puerto IPv4 53"
 
-#~ msgid "IPV6 53 Port Redirect Failure"
+#~ msgid "IPv6 53 Port Redirect Failure"
 #~ msgstr "Error de reenvío de puerto IPv6 53"
 
 #~ msgid "Redirect"

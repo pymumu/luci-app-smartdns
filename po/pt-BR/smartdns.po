@@ -261,12 +261,12 @@ msgstr ""
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:241
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1008
-msgid "Enable IP selection between IPV4 and IPV6"
-msgstr "Ative a seleção do IP entre o IPV4 e o IPV6"
+msgid "Enable IP selection between IPv4 and IPv6"
+msgstr "Ative a seleção do IP entre o IPv4 e o IPv6"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:224
-msgid "Enable IPV6 DNS Server"
-msgstr "Ativar o Servidor IPV6 do DNS"
+msgid "Enable IPv6 DNS Server"
+msgstr "Ativar o Servidor IPv6 do DNS"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:219
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:384
@@ -380,8 +380,8 @@ msgid "IP Blacklist Filtering"
 msgstr "Filtragem da Lista Negra dos IPs"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:224
-msgid "IPV6 Server"
-msgstr "Servidor IPV6"
+msgid "IPv6 Server"
+msgstr "Servidor IPv6"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:440
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:846
@@ -942,11 +942,11 @@ msgstr "udp"
 #~ msgid "Sets the server name indication for query."
 #~ msgstr "Define a indicação do nome do servidor para consulta."
 
-#~ msgid "IPV4 53 Port Redirect Failure"
-#~ msgstr "Falha no Redirecionamento da Porta IPV4 53"
+#~ msgid "IPv4 53 Port Redirect Failure"
+#~ msgstr "Falha no Redirecionamento da Porta IPv4 53"
 
-#~ msgid "IPV6 53 Port Redirect Failure"
-#~ msgstr "Falha no Redirecionamento da Porta IPV6 53"
+#~ msgid "IPv6 53 Port Redirect Failure"
+#~ msgstr "Falha no Redirecionamento da Porta IPv6 53"
 
 #~ msgid "Redirect"
 #~ msgstr "Redirecione"
