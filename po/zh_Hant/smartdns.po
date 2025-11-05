@@ -256,12 +256,12 @@ msgstr ""
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:241
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1008
-msgid "Enable IP selection between IPV4 and IPV6"
-msgstr "启用 IPV4 和 IPV6 間的 IP 優選策略"
+msgid "Enable IP selection between IPv4 and IPv6"
+msgstr "启用 IPv4 和 IPv6 間的 IP 優選策略"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:224
-msgid "Enable IPV6 DNS Server"
-msgstr "启用 IPV6 伺服器"
+msgid "Enable IPv6 DNS Server"
+msgstr "启用 IPv6 伺服器"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:219
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:384
@@ -321,14 +321,14 @@ msgstr ""
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:842
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1056
 msgid "Force AAAA SOA"
-msgstr "停用 IPV6 位址解析"
+msgstr "停用 IPv6 位址解析"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:272
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:436
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:842
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:1056
 msgid "Force AAAA SOA."
-msgstr "停用 IPV6 位址解析。"
+msgstr "停用 IPv6 位址解析。"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:277
 msgid "Force HTTPS SOA"
@@ -372,8 +372,8 @@ msgid "IP Blacklist Filtering"
 msgstr "IP 黑名單過濾"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:224
-msgid "IPV6 Server"
-msgstr "IPV6 伺服器"
+msgid "IPv6 Server"
+msgstr "IPv6 伺服器"
 
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:440
 #: applications/luci-app-smartdns/htdocs/luci-static/resources/view/smartdns/smartdns.js:846
@@ -923,11 +923,11 @@ msgstr "udp"
 #~ msgid "Sets the server name indication for query."
 #~ msgstr "設置查詢時使用的伺服器 SNI 名稱。"
 
-#~ msgid "IPV4 53 Port Redirect Failure"
-#~ msgstr "IPV4 53 通訊埠重定向失敗"
+#~ msgid "IPv4 53 Port Redirect Failure"
+#~ msgstr "IPv4 53 通訊埠重定向失敗"
 
-#~ msgid "IPV6 53 Port Redirect Failure"
-#~ msgstr "IPV6 53 通訊埠重定向失敗"
+#~ msgid "IPv6 53 Port Redirect Failure"
+#~ msgstr "IPv6 53 通訊埠重定向失敗"
 
 #~ msgid "Redirect"
 #~ msgstr "重定向"
