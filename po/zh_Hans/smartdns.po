@@ -77,7 +77,7 @@ msgstr "请检查系统日志，并检查配置是否合法。"
 
 #: smartdns.js:89
 msgid "Dnsmasq Forwarded To Smartdns Failure"
-msgstr "重定向dnsmasq到smartdns失败"
+msgstr "重定向 Dnsmasq 到 SmartDNS 失败"
 
 #: smartdns.js:118
 msgid "SmartDNS"
@@ -91,7 +91,7 @@ msgstr "SmartDNS 服务器"
 msgid ""
 "SmartDNS is a local high-performance DNS server, supports finding fastest "
 "IP, supports ad filtering, and supports avoiding DNS poisoning."
-msgstr "SmartDNS是一个本地高性能DNS服务器，支持返回最快IP，支持广告过滤。"
+msgstr "SmartDNS 是一个本地高性能 DNS 服务器，支持返回最快 IP，支持广告过滤。"
 
 #: smartdns.js:151
 msgid "Settings"
@@ -107,11 +107,11 @@ msgstr "高级设置"
 
 #: smartdns.js:156
 msgid "Second Server Settings"
-msgstr "第二DNS服务器"
+msgstr "第二 DNS 服务器"
 
 #: smartdns.js:157
 msgid "DNS64 Server Settings"
-msgstr "DNS64服务器配置"
+msgstr "DNS64 服务器配置"
 
 #: smartdns.js:158
 msgid "Download Files Setting"
@@ -122,7 +122,7 @@ msgid ""
 "Download domain list files for domain-rule and include config files, please "
 "refresh the page after download to take effect."
 msgstr ""
-"下载域名规则所需要的域名列表文件和smartdns配置文件，下载完成后刷新页面。"
+"下载域名规则所需要的域名列表文件和 SmartDNS 配置文件，下载完成后刷新页面。"
 
 #: smartdns.js:159
 msgid "Proxy Server Settings"
@@ -139,7 +139,7 @@ msgstr "启用"
 
 #: smartdns.js:165
 msgid "Enable or disable smartdns server"
-msgstr "启用或禁用SmartDNS服务"
+msgstr "启用或禁用 SmartDNS 服务"
 
 #: smartdns.js:170
 msgid "Server Name"
@@ -147,7 +147,7 @@ msgstr "服务器名称"
 
 #: smartdns.js:170
 msgid "Smartdns server name"
-msgstr "SmartDNS的服务器名称，默认为smartdns，留空为主机名"
+msgstr "SmartDNS 的服务器名称，默认为 smartdns，留空为主机名"
 
 #: smartdns.js:176 smartdns.js:528
 msgid "Local Port"
@@ -158,47 +158,47 @@ msgid ""
 "Smartdns local server port, smartdns will be automatically set as main dns "
 "when the port is 53."
 msgstr ""
-"SmartDNS本地服务端口，当端口号设置为53时，smartdns将会自动配置为主dns。"
+"SmartDNS 本地服务端口，当端口号设置为 53 时，SmartDNS 将会自动配置为主 DNS。"
 
 #: smartdns.js:184
 msgid "Automatically Set Dnsmasq"
-msgstr "自动设置Dnsmasq"
+msgstr "自动设置 Dnsmasq"
 
 #: smartdns.js:184
 msgid "Automatically set as upstream of dnsmasq when port changes."
-msgstr "端口更改时自动设为 dnsmasq 的上游。"
+msgstr "端口更改时自动设为 Dnsmasq 的上游。"
 
 #: smartdns.js:190
 msgid "Enable WebUI"
-msgstr "启用WebUI"
+msgstr "启用 WebUI"
 
 #: smartdns.js:190
 msgid "Enable or disable smartdns webui plugin."
-msgstr "启用或禁用SmartDNS WebUI插件。"
+msgstr "启用或禁用 SmartDNS WebUI 插件。"
 
 #: smartdns.js:194
 msgid "WebUI Port"
-msgstr "WebUI端口"
+msgstr "WebUI 端口"
 
 #: smartdns.js:194
 msgid "WebUI server port."
-msgstr "WebUI服务端口。"
+msgstr "WebUI 服务端口。"
 
 #: smartdns.js:200
 msgid "WebUI Data Dir"
-msgstr "WebUI数据库目录"
+msgstr "WebUI 数据库目录"
 
 #: smartdns.js:200
 msgid "Directory for storing the webui database."
-msgstr "用于存储WebUI数据库的目录。"
+msgstr "用于存储 WebUI 数据库的目录。"
 
 #: smartdns.js:206
 msgid "WebUI Log Retention"
-msgstr "WebUI日志保存天数"
+msgstr "WebUI 日志保存天数"
 
 #: smartdns.js:206
 msgid "Number of days to retain webui logs."
-msgstr "保留WebUI日志的天数。"
+msgstr "保留 WebUI 日志的天数。"
 
 #: smartdns.js:217 smartdns.js:1119 smartdns.js:1278 smartdns.js:1501
 msgid "Speed Check Mode"
@@ -206,7 +206,7 @@ msgstr "测速模式"
 
 #: smartdns.js:217 smartdns.js:1119 smartdns.js:1278 smartdns.js:1501
 msgid "Smartdns speed check mode."
-msgstr "SmartDNS测速模式。"
+msgstr "SmartDNS 测速模式。"
 
 #: smartdns.js:220 smartdns.js:261 smartdns.js:793 smartdns.js:1122
 #: smartdns.js:1281 smartdns.js:1323 smartdns.js:1497 smartdns.js:1505
@@ -220,7 +220,7 @@ msgstr "无"
 
 #: smartdns.js:244 smartdns.js:1146 smartdns.js:1305 smartdns.js:1529
 msgid "TCP port is empty"
-msgstr "TCP端口号为空"
+msgstr "TCP 端口号为空"
 
 #: smartdns.js:250 smartdns.js:1152 smartdns.js:1311 smartdns.js:1535
 msgid "Speed check mode is invalid."
@@ -235,16 +235,16 @@ msgid ""
 "Smartdns response mode, First Ping: return the first ping IP, Fastest IP: "
 "return the fastest IP, Fastest Response: return the fastest DNS response."
 msgstr ""
-"SmartDNS响应模式，最快PING： 返回最早有ping结果的IP，速度适中；最快IP： 返回"
-"最快IP，查询请求可能延长； 最快响应：返回最快响应的结果，查询请求时间短。"
+"SmartDNS 响应模式，最快 Ping：返回最早有 ping 结果的 IP，速度适中；最快 IP：返回"
+"最快 IP，查询请求可能延长；最快响应：返回最快响应的结果，查询请求时间短。"
 
 #: smartdns.js:262
 msgid "First Ping"
-msgstr "最快PING"
+msgstr "最快 Ping"
 
 #: smartdns.js:263
 msgid "Fastest IP"
-msgstr "最快IP"
+msgstr "最快 IP"
 
 #: smartdns.js:264
 msgid "Fastest Response"
@@ -252,43 +252,43 @@ msgstr "最快响应"
 
 #: smartdns.js:267 smartdns.js:535
 msgid "TCP Server"
-msgstr "TCP服务器"
+msgstr "TCP 服务器"
 
 #: smartdns.js:267 smartdns.js:535
 msgid "Enable TCP DNS Server"
-msgstr "启用TCP服务器。"
+msgstr "启用 TCP 服务器。"
 
 #: smartdns.js:272
 msgid "DOT Server"
-msgstr "DOT服务器"
+msgstr "DOT 服务器"
 
 #: smartdns.js:272
 msgid "Enable DOT DNS Server"
-msgstr "启用DOT服务器"
+msgstr "启用 DOT 服务器"
 
 #: smartdns.js:276
 msgid "DOT Server Port"
-msgstr "DOT服务器端口"
+msgstr "DOT 服务器端口"
 
 #: smartdns.js:276
 msgid "Smartdns DOT server port."
-msgstr "Smartdns DOT服务器端口号。"
+msgstr "SmartDNS DOT 服务器端口号。"
 
 #: smartdns.js:284
 msgid "DOH Server"
-msgstr "DOH服务器"
+msgstr "DOH 服务器"
 
 #: smartdns.js:284
 msgid "Enable DOH DNS Server"
-msgstr "启用DOH服务器"
+msgstr "启用 DOH 服务器"
 
 #: smartdns.js:288
 msgid "DOH Server Port"
-msgstr "DOH服务器端口"
+msgstr "DOH 服务器端口"
 
 #: smartdns.js:288
 msgid "Smartdns DOH server port."
-msgstr "Smartdns DOH服务器端口号"
+msgstr "SmartDNS DOH 服务器端口号"
 
 #: smartdns.js:295
 msgid "Server Cert"
@@ -316,11 +316,11 @@ msgstr "服务器证书私钥文件密码。"
 
 #: smartdns.js:316
 msgid "IPV6 Server"
-msgstr "IPV6服务器"
+msgstr "IPv6 服务器"
 
 #: smartdns.js:316
 msgid "Enable IPV6 DNS Server"
-msgstr "启用IPV6服务器。"
+msgstr "启用 IPv6 服务器。"
 
 #: smartdns.js:321
 msgid "Bind Device"
@@ -328,7 +328,7 @@ msgstr "绑定到设备"
 
 #: smartdns.js:321
 msgid "Listen only on the specified interfaces."
-msgstr "监听在指定的设备上，避免非本地网络的DNS查询请求。"
+msgstr "监听在指定的设备上，避免非本地网络的 DNS 查询请求。"
 
 #: smartdns.js:326
 msgid "Bind Device Name"
@@ -340,11 +340,11 @@ msgstr "绑定的设备名称。"
 
 #: smartdns.js:332 smartdns.js:1159 smartdns.js:1318 smartdns.js:1492
 msgid "Dual-stack IP Selection"
-msgstr "双栈IP优选"
+msgstr "双栈 IP 优选"
 
 #: smartdns.js:333 smartdns.js:1160 smartdns.js:1319 smartdns.js:1493
 msgid "Enable IP selection between IPV4 and IPV6"
-msgstr "启用 IPV4 和 IPV6 间的 IP 优选策略。"
+msgstr "启用 IPv4 和 IPv6 间的 IP 优选策略。"
 
 #: smartdns.js:338
 msgid "Domain prefetch"
@@ -362,7 +362,7 @@ msgstr "缓存过期服务"
 msgid ""
 "Attempts to serve old responses from cache with a TTL of 0 in the response "
 "without waiting for the actual resolution to finish."
-msgstr "查询性能优化，有请求时尝试回应TTL为0的过期记录，以避免查询等待。"
+msgstr "查询性能优化，有请求时尝试回应 TTL 为 0 的过期记录，以避免查询等待。"
 
 #: smartdns.js:350
 msgid "Cache Size"
@@ -370,7 +370,7 @@ msgstr "缓存大小"
 
 #: smartdns.js:350
 msgid "DNS domain result cache size"
-msgstr "缓存DNS的结果，缓存大小，配置零则不缓存。"
+msgstr "缓存 DNS 的结果，缓存大小，配置零则不缓存。"
 
 #: smartdns.js:354
 msgid "Cache Persist"
@@ -378,7 +378,7 @@ msgstr "持久化缓存"
 
 #: smartdns.js:354
 msgid "Write cache to disk on exit and load on startup."
-msgstr "退出时保存cache到磁盘，启动时加载。"
+msgstr "退出时保存 Cache 到磁盘，启动时加载。"
 
 #: smartdns.js:359
 msgid "Resolve Local Hostnames"
@@ -386,85 +386,85 @@ msgstr "解析本地主机名"
 
 #: smartdns.js:359
 msgid "Resolve local hostnames by reading Dnsmasq lease file."
-msgstr "读取Dnsmasq的租约文件解析本地主机名。"
+msgstr "读取 Dnsmasq 的租约文件解析本地主机名。"
 
 #: smartdns.js:364
 msgid "mDNS Lookup"
-msgstr "mDNS查询"
+msgstr "mDNS 查询"
 
 #: smartdns.js:364
 msgid "Resolve local network hostname via mDNS protocol."
-msgstr "使用mDNS协议解析本地网络主机名。"
+msgstr "使用 mDNS 协议解析本地网络主机名。"
 
 #: smartdns.js:369 smartdns.js:587 smartdns.js:1165 smartdns.js:1327
 #: smartdns.js:1541
 msgid "Force AAAA SOA"
-msgstr "停用IPV6地址解析"
+msgstr "停用 IPv6 地址解析"
 
 #: smartdns.js:369 smartdns.js:587 smartdns.js:1165 smartdns.js:1327
 #: smartdns.js:1541
 msgid "Force AAAA SOA."
-msgstr "停用IPV6地址解析。"
+msgstr "停用 IPv6 地址解析。"
 
 #: smartdns.js:374 smartdns.js:592 smartdns.js:1170
 msgid "Force HTTPS SOA"
-msgstr "停用HTTPS记录解析"
+msgstr "停用 HTTPS 记录解析"
 
 #: smartdns.js:374 smartdns.js:592 smartdns.js:1170
 msgid "Force HTTPS SOA."
-msgstr "停用HTTPS记录解析。"
+msgstr "停用 HTTPS 记录解析。"
 
 #: smartdns.js:379 smartdns.js:600 smartdns.js:1175 smartdns.js:1331
 #: smartdns.js:1547
 msgid "IPset Name"
-msgstr "IPset名称"
+msgstr "IPset 名称"
 
 #: smartdns.js:379 smartdns.js:600 smartdns.js:1175 smartdns.js:1331
 #: smartdns.js:1547
 msgid "IPset name."
-msgstr "IPset名称。"
+msgstr "IPset 名称。"
 
 #: smartdns.js:391 smartdns.js:412 smartdns.js:612 smartdns.js:1187
 #: smartdns.js:1343
 msgid "ipset name format error, format: [#[4|6]:]ipsetname"
-msgstr "IPset名称格式错误，格式：[#[4|6]:]ipsetname"
+msgstr "IPset 名称格式错误，格式：[#[4|6]:]ipsetname"
 
 #: smartdns.js:399
 msgid "No Speed IPset Name"
-msgstr "无速度时IPSet名称"
+msgstr "无速度时 IPset 名称"
 
 #: smartdns.js:400
 msgid "Ipset name, Add domain result to ipset when speed check fails."
-msgstr "IPset名称，当测速失败时，将查询到的结果添加到对应的IPSet集合中。"
+msgstr "IPset 名称，当测速失败时，将查询到的结果添加到对应的 IPset 集合中。"
 
 #: smartdns.js:420 smartdns.js:619 smartdns.js:1195 smartdns.js:1350
 #: smartdns.js:1553
 msgid "NFTset Name"
-msgstr "NFTSet名称"
+msgstr "NFTset 名称"
 
 #: smartdns.js:420 smartdns.js:619 smartdns.js:1195 smartdns.js:1350
 #: smartdns.js:1553
 msgid "NFTset name, format: [#[4|6]:[family#table#set]]"
-msgstr "NFTSet名称，格式：[#[4|6]:[family#table#set]]"
+msgstr "NFTset 名称，格式：[#[4|6]:[family#table#set]]"
 
 #: smartdns.js:432 smartdns.js:453 smartdns.js:631 smartdns.js:1207
 #: smartdns.js:1362 smartdns.js:1566
 msgid "NFTset name format error, format: [#[4|6]:[family#table#set]]"
-msgstr "NFTSet名称格式错误，格式：[#[4|6]:[family#table#set]]"
+msgstr "NFTset 名称格式错误，格式：[#[4|6]:[family#table#set]]"
 
 #: smartdns.js:440
 msgid "No Speed NFTset Name"
-msgstr "无速度时NFTSet名称"
+msgstr "无速度时 NFTset 名称"
 
 #: smartdns.js:441
 msgid ""
 "Nftset name, Add domain result to nftset when speed check fails, format: "
 "[#[4|6]:[family#table#set]]"
-msgstr "NFTset名称，当测速失败时，将查询到的结果添加到对应的NFTSet集合中。"
+msgstr "NFTset 名称，当测速失败时，将查询到的结果添加到对应的 NFTset 集合中。"
 
 #: smartdns.js:461
 msgid "Domain TTL"
-msgstr "域名TTL"
+msgstr "域名 TTL"
 
 #: smartdns.js:461
 msgid "TTL for all domain result."
@@ -472,7 +472,7 @@ msgstr "设置所有域名的 TTL 值。"
 
 #: smartdns.js:465
 msgid "Domain TTL Min"
-msgstr "域名TTL最小值"
+msgstr "域名 TTL 最小值"
 
 #: smartdns.js:466
 msgid "Minimum TTL for all domain result."
@@ -480,7 +480,7 @@ msgstr "所有域名的最小 TTL 值。"
 
 #: smartdns.js:473
 msgid "Domain TTL Max"
-msgstr "域名TTL最大值"
+msgstr "域名 TTL 最大值"
 
 #: smartdns.js:474
 msgid "Maximum TTL for all domain result."
@@ -488,11 +488,11 @@ msgstr "所有域名的最大 TTL 值。"
 
 #: smartdns.js:478
 msgid "Reply Domain TTL Max"
-msgstr "回应的域名TTL最大值"
+msgstr "回应的域名 TTL 最大值"
 
 #: smartdns.js:479
 msgid "Reply maximum TTL for all domain result."
-msgstr "设置返回给客户端的域名TTL最大值。"
+msgstr "设置返回给客户端的域名 TTL 最大值。"
 
 #: smartdns.js:483 smartdns.js:639 smartdns.js:1040
 msgid "Additional Server Args"
@@ -501,7 +501,7 @@ msgstr "额外的服务器参数"
 #: smartdns.js:484 smartdns.js:640
 msgid ""
 "Additional server args, refer to the help description of the bind option."
-msgstr "额外的服务器参数，参考bind选项的帮助说明。"
+msgstr "额外的服务器参数，参考 bind 选项的帮助说明。"
 
 #: smartdns.js:490 smartdns.js:1216
 msgid "Include Config Files<br>/etc/smartdns/conf.d"
@@ -512,24 +512,24 @@ msgid ""
 "Include other config files from /etc/smartdns/conf.d or custom path, can be "
 "downloaded from the download page."
 msgstr ""
-"包含配置文件，路径为/etc/smartdns/conf.d，或自定义配置文件路径，可以从下载页"
+"包含配置文件，路径为 /etc/smartdns/conf.d，或自定义配置文件路径，可以从下载页"
 "面配置自动下载。"
 
 #: smartdns.js:504
 msgid "Hosts File"
-msgstr "Hosts文件"
+msgstr "Hosts 文件"
 
 #: smartdns.js:504
 msgid "Include hosts file."
-msgstr "包含hosts文件。"
+msgstr "包含 hosts 文件。"
 
 #: smartdns.js:523
 msgid "Enable or disable second DNS server."
-msgstr "是否启用第二DNS服务器。"
+msgstr "是否启用第二 DNS 服务器。"
 
 #: smartdns.js:528
 msgid "Smartdns local server port"
-msgstr "SmartDNS本地服务端口"
+msgstr "SmartDNS 本地服务端口"
 
 #: smartdns.js:540 smartdns.js:915 smartdns.js:1094 smartdns.js:1253
 #: smartdns.js:1452
@@ -538,7 +538,7 @@ msgstr "服务器组"
 
 #: smartdns.js:541
 msgid "Query DNS through specific dns server group, such as office, home."
-msgstr "使用指定服务器组查询，比如office, home。"
+msgstr "使用指定服务器组查询，比如 office、home。"
 
 #: smartdns.js:547
 msgid "Skip Speed Check"
@@ -550,35 +550,35 @@ msgstr "禁用测速。"
 
 #: smartdns.js:553
 msgid "Skip Address Rules"
-msgstr "跳过address规则"
+msgstr "跳过 address 规则"
 
 #: smartdns.js:554
 msgid "Skip address rules."
-msgstr "跳过address规则。"
+msgstr "跳过 address 规则。"
 
 #: smartdns.js:559
 msgid "Skip Nameserver Rule"
-msgstr "跳过Nameserver规则"
+msgstr "跳过 Nameserver 规则"
 
 #: smartdns.js:560
 msgid "Skip nameserver rules."
-msgstr "跳过Nameserver规则。"
+msgstr "跳过 Nameserver 规则。"
 
 #: smartdns.js:565
 msgid "Skip Ipset Rule"
-msgstr "跳过ipset规则"
+msgstr "跳过 ipset 规则"
 
 #: smartdns.js:566
 msgid "Skip ipset rules."
-msgstr "跳过ipset规则。"
+msgstr "跳过 ipset 规则。"
 
 #: smartdns.js:571
 msgid "Skip SOA Address Rule"
-msgstr "跳过address SOA(#)规则"
+msgstr "跳过 address SOA(#) 规则"
 
 #: smartdns.js:572
 msgid "Skip SOA address rules."
-msgstr "跳过address SOA(#)规则。"
+msgstr "跳过 address SOA(#) 规则。"
 
 #: smartdns.js:576
 msgid "Skip Dualstack Selection"
@@ -590,15 +590,15 @@ msgstr "跳过双栈优选。"
 
 #: smartdns.js:582
 msgid "Skip Cache"
-msgstr "跳过cache"
+msgstr "跳过 Cache"
 
 #: smartdns.js:582
 msgid "Skip Cache."
-msgstr "跳过cache。"
+msgstr "跳过 Cache。"
 
 #: smartdns.js:596
 msgid "Skip IP Alias"
-msgstr "跳过IP别名"
+msgstr "跳过 IP 别名"
 
 #: smartdns.js:647
 msgid "DNS64"
@@ -658,7 +658,7 @@ msgstr "上传配置文件"
 
 #: smartdns.js:679
 msgid "Upload smartdns config file to /etc/smartdns/conf.d"
-msgstr "上传配置文件到/etc/smartdns/conf.d"
+msgstr "上传配置文件到 /etc/smartdns/conf.d"
 
 #: smartdns.js:685
 msgid "Upload Domain List File"
@@ -666,7 +666,7 @@ msgstr "上传域名列表文件"
 
 #: smartdns.js:686
 msgid "Upload domain list file to /etc/smartdns/domain-set"
-msgstr "上传域名列表文件到/etc/smartdns/domain-set"
+msgstr "上传域名列表文件到 /etc/smartdns/domain-set"
 
 #: smartdns.js:692
 msgid "Upload File"
@@ -698,7 +698,7 @@ msgstr "URL"
 
 #: smartdns.js:732
 msgid "URL format error, format: http:// or https://"
-msgstr "URL格式错误，格式：http://或https://"
+msgstr "URL 格式错误，格式：http:// 或 https://"
 
 #: smartdns.js:738 smartdns.js:903
 msgid "type"
@@ -714,11 +714,11 @@ msgstr "域名列表（/etc/smartdns/domain-set）"
 
 #: smartdns.js:740
 msgid "smartdns config (/etc/smartdns/conf.d)"
-msgstr "smartdns 配置文件（/etc/smartdns/conf.d）"
+msgstr "SmartDNS 配置文件（/etc/smartdns/conf.d）"
 
 #: smartdns.js:741
 msgid "ip-set file (/etc/smartdns/ip-set)"
-msgstr "IP集合列表文件（/etc/smartdns/ip-set）"
+msgstr "IP 集合列表文件（/etc/smartdns/ip-set）"
 
 #: smartdns.js:742
 msgid "other file (/etc/smartdns/download)"
@@ -743,18 +743,18 @@ msgstr "代理服务器地址格式错误，格式：[socks5|http]://user:pass@i
 
 #: smartdns.js:771
 msgid "smartdns custom settings"
-msgstr "smartdns 自定义设置，具体配置参数参考指导"
+msgstr "SmartDNS 自定义设置，具体配置参数参考指导"
 
 #: smartdns.js:785
 msgid "Generate Coredump"
-msgstr "生成coredump"
+msgstr "生成 Coredump"
 
 #: smartdns.js:786
 msgid ""
 "Generate Coredump file when smartdns crash, coredump file is located at /tmp/"
 "smartdns.xxx.core."
 msgstr ""
-"当smartdns异常时生成coredump文件，coredump文件在/tmp/smartdns.xxx.core."
+"当 SmartDNS 异常时生成 Coredump 文件，Coredump 文件在 /tmp/smartdns.xxx.core。"
 
 #: smartdns.js:790
 msgid "Log Level"
@@ -822,7 +822,7 @@ msgstr ""
 
 #: smartdns.js:885
 msgid "DNS Server Name"
-msgstr "DNS服务器名称"
+msgstr "DNS 服务器名称"
 
 #: smartdns.js:888
 msgid "ip"
@@ -830,7 +830,7 @@ msgstr "ip"
 
 #: smartdns.js:888
 msgid "DNS Server ip"
-msgstr "DNS服务器IP"
+msgstr "DNS 服务器 IP"
 
 #: smartdns.js:893
 msgid "port"
@@ -838,7 +838,7 @@ msgstr "端口"
 
 #: smartdns.js:893
 msgid "DNS Server port"
-msgstr "DNS服务器端口"
+msgstr "DNS 服务器端口"
 
 #: smartdns.js:903
 msgid "DNS Server type"
@@ -878,23 +878,23 @@ msgstr "从默认组中排除"
 
 #: smartdns.js:934
 msgid "Exclude DNS Server from default group."
-msgstr "从default默认服务器组中排除。"
+msgstr "从 default 默认服务器组中排除。"
 
 #: smartdns.js:941
 msgid "IP Blacklist Filtering"
-msgstr "IP黑名单过滤"
+msgstr "IP 黑名单过滤"
 
 #: smartdns.js:942
 msgid "Filtering IP with blacklist"
-msgstr "使用IP黑名单过滤"
+msgstr "使用 IP 黑名单过滤"
 
 #: smartdns.js:948
 msgid "TLS Hostname Verify"
-msgstr "校验TLS主机名"
+msgstr "校验 TLS 主机名"
 
 #: smartdns.js:949
 msgid "Set TLS hostname to verify."
-msgstr "设置校验TLS主机名。"
+msgstr "设置校验 TLS 主机名。"
 
 #: smartdns.js:960
 msgid "No check certificate"
@@ -906,21 +906,21 @@ msgstr "不校验证书的合法性。"
 
 #: smartdns.js:971
 msgid "TLS SNI name"
-msgstr "TLS SNI名称"
+msgstr "TLS SNI 名称"
 
 #: smartdns.js:972
 msgid "Sets the server name indication for query. '-' for disable SNI name."
-msgstr "设置服务器SNI名称，‘-’表示禁用SNI名称。"
+msgstr "设置服务器 SNI 名称，‘-’表示禁用 SNI 名称。"
 
 #: smartdns.js:983
 msgid "HTTP Host"
-msgstr "HTTP主机"
+msgstr "HTTP 主机"
 
 #: smartdns.js:984
 msgid ""
 "Set the HTTP host used for the query. Use this parameter when the host of "
 "the URL address is an IP address."
-msgstr "设置查询时使用的HTTP主机，当URL地址的host是IP地址时，使用此参数。"
+msgstr "设置查询时使用的 HTTP 主机，当 URL 地址的 host 是 IP 地址时，使用此参数。"
 
 #: smartdns.js:993
 msgid "TLS SPKI Pinning"
@@ -949,7 +949,7 @@ msgstr "使用代理"
 
 #: smartdns.js:1015
 msgid "Use proxy to connect to upstream DNS server."
-msgstr "使用代理连接上游DNS服务器。"
+msgstr "使用代理连接上游 DNS 服务器。"
 
 #: smartdns.js:1029
 msgid "Please set proxy server first."
@@ -957,7 +957,7 @@ msgstr "请先设置代理服务器。"
 
 #: smartdns.js:1033
 msgid "Only socks5 proxy support udp server."
-msgstr "仅SOCKS5代理支持UDP服务器。"
+msgstr "仅 SOCKS5 代理支持 UDP 服务器。"
 
 #: smartdns.js:1041
 msgid "Additional Args for upstream dns servers"
@@ -989,12 +989,12 @@ msgid ""
 "can enter an IP address, such as 1.2.3.4, or a MAC address, such as aa:bb:cc:"
 "dd:ee:ff."
 msgstr ""
-"如果指定了客户端，那么对应的客户端会应用相应的规则，可以输入IP地址，如："
-"1.2.3.4，或MAC地址，如：aa:bb:cc:dd:ee:ff。"
+"如果指定了客户端，那么对应的客户端会应用相应的规则，可以输入 IP 地址，如："
+"1.2.3.4，或 MAC 地址，如：aa:bb:cc:dd:ee:ff。"
 
 #: smartdns.js:1083
 msgid "Client address format error, please input ip adress or mac address."
-msgstr "客户端地址格式错误，请输入 IP 地址或 mac 地址。"
+msgstr "客户端地址格式错误，请输入 IP 地址或 MAC 地址。"
 
 #: smartdns.js:1086
 msgid "Client Address File"
@@ -1006,12 +1006,12 @@ msgstr "上传客户端地址文件，与客户端地址功能相同。"
 
 #: smartdns.js:1094 smartdns.js:1253 smartdns.js:1452
 msgid "DNS Server group belongs to, such as office, home."
-msgstr "设置服务器组，例如office，home"
+msgstr "设置服务器组，例如 office、home"
 
 #: smartdns.js:1114 smartdns.js:1273 smartdns.js:1472
 #, javascript-format
 msgid "Server Group %s not exists"
-msgstr "服务器组%s不存在"
+msgstr "服务器组 %s 不存在"
 
 #: smartdns.js:1230 smartdns.js:1376 smartdns.js:1406 smartdns.js:1476
 msgid "Domain List File"
@@ -1047,7 +1047,7 @@ msgstr "域名地址"
 
 #: smartdns.js:1248
 msgid "Set Specific domain ip address."
-msgstr "设置指定域名的IP地址。"
+msgstr "设置指定域名的 IP 地址。"
 
 #: smartdns.js:1324 smartdns.js:1498
 msgid "Yes"
@@ -1064,7 +1064,7 @@ msgstr "额外规则标识"
 #: smartdns.js:1371 smartdns.js:1575
 msgid ""
 "Additional Flags for rules, read help on domain-rule for more information."
-msgstr "额外的规则标识，具体参考domain-rule的帮助说明。"
+msgstr "额外的规则标识，具体参考 domain-rule 的帮助说明。"
 
 #: smartdns.js:1377 smartdns.js:1477
 msgid ""
@@ -1106,28 +1106,28 @@ msgid ""
 "in the domains are never forwarded and always replied to with the specified "
 "IP address which may be IPv4 or IPv6."
 msgstr ""
-"配置特定域名返回特定的IP地址，域名查询将不到上游服务器请求，直接返回配置的IP"
+"配置特定域名返回特定的 IP 地址，域名查询将不到上游服务器请求，直接返回配置的 IP"
 "地址，可用于广告屏蔽。"
 
 #: smartdns.js:1604
 msgid "IP Rules"
-msgstr "IP规则"
+msgstr "IP 规则"
 
 #: smartdns.js:1604
 msgid "IP Rules Settings"
-msgstr "IP规则设置"
+msgstr "IP 规则设置"
 
 #: smartdns.js:1608 smartdns.js:1614
 msgid "IP Rule List"
-msgstr "IP规则列表"
+msgstr "IP 规则列表"
 
 #: smartdns.js:1608
 msgid "Set Specific ip rule list."
-msgstr "设置对应IP的规则。"
+msgstr "设置对应 IP 的规则。"
 
 #: smartdns.js:1609
 msgid "IP Blacklist"
-msgstr "IP黑名单"
+msgstr "IP 黑名单"
 
 #: smartdns.js:1609
 msgid "Set Specific ip blacklist."
@@ -1135,27 +1135,27 @@ msgstr "设置指定的 IP 黑名单列表。"
 
 #: smartdns.js:1615
 msgid "Configure ip rule list."
-msgstr "配置IP规则列表"
+msgstr "配置 IP 规则列表"
 
 #: smartdns.js:1630
 msgid "IP Rule Name"
-msgstr "IP规则名称"
+msgstr "IP 规则名称"
 
 #: smartdns.js:1634
 msgid "IP Set File"
-msgstr "IP集合列表文件"
+msgstr "IP 集合列表文件"
 
 #: smartdns.js:1634
 msgid "Upload IP set file."
-msgstr "上传IP集合列表文件。"
+msgstr "上传 IP 集合列表文件。"
 
 #: smartdns.js:1640
 msgid "IP Addresses"
-msgstr "IP地址"
+msgstr "IP 地址"
 
 #: smartdns.js:1640
 msgid "IP addresses, CIDR format."
-msgstr "IP地址，CIDR格式。"
+msgstr "IP 地址，CIDR 格式。"
 
 #: smartdns.js:1645
 msgid "Whitelist IP"
@@ -1163,7 +1163,7 @@ msgstr "白名单"
 
 #: smartdns.js:1645
 msgid "Whitelist IP Rule, Accept IP addresses within the range."
-msgstr "白名单规则，接受指定范围的IP地址。"
+msgstr "白名单规则，接受指定范围的 IP 地址。"
 
 #: smartdns.js:1650
 msgid "Blacklist IP"
@@ -1171,43 +1171,43 @@ msgstr "黑名单"
 
 #: smartdns.js:1650
 msgid "Blacklist IP Rule, Decline IP addresses within the range."
-msgstr "黑名单规则，拒绝指定范围的IP地址。"
+msgstr "黑名单规则，拒绝指定范围的 IP 地址。"
 
 #: smartdns.js:1655
 msgid "Ignore IP"
-msgstr "忽略IP"
+msgstr "忽略 IP"
 
 #: smartdns.js:1655
 msgid "Do not use these IP addresses."
-msgstr "忽略这些IP地址"
+msgstr "忽略这些 IP 地址"
 
 #: smartdns.js:1660
 msgid "Bogus nxdomain"
-msgstr "假冒IP"
+msgstr "假冒 IP"
 
 #: smartdns.js:1660
 msgid "Return SOA when the requested result contains a specified IP address."
-msgstr "当结果包含对应范围的IP时，返回SOA。"
+msgstr "当结果包含对应范围的 IP 时，返回 SOA。"
 
 #: smartdns.js:1665
 msgid "IP alias"
-msgstr "IP别名"
+msgstr "IP 别名"
 
 #: smartdns.js:1665
 msgid ""
 "IP Address Mapping, Can be used for CDN acceleration with Anycast IP, such "
 "as Cloudflare's CDN."
-msgstr "IP地址映射，可用于支持AnyCast IP的CDN加速，比如Cloudflare的CDN。"
+msgstr "IP 地址映射，可用于支持 Anycast IP 的 CDN 加速，比如 Cloudflare 的 CDN。"
 
 #: smartdns.js:1672
 msgid "Additional Flags for rules, read help on ip-rule for more information."
-msgstr "额外的规则标识，具体参考ip-rule的帮助说明。"
+msgstr "额外的规则标识，具体参考 ip-rule 的帮助说明。"
 
 #: smartdns.js:1681
 msgid ""
 "Configure IP blacklists that will be filtered from the results of specific "
 "DNS server."
-msgstr "配置需要从指定域名服务器结果过滤的IP黑名单。"
+msgstr "配置需要从指定域名服务器结果过滤的 IP 黑名单。"
 
 #: smartdns.js:1698
 msgid "Technical Support"
@@ -1219,7 +1219,7 @@ msgstr "如果本软件对你有帮助，请给作者加个蛋。"
 
 #: smartdns.js:1703
 msgid "SmartDNS official website"
-msgstr "SmartDNS官方网站"
+msgstr "SmartDNS 官方网站"
 
 #: smartdns.js:1704
 msgid "open website"
@@ -1227,11 +1227,11 @@ msgstr "打开网站"
 
 #: smartdns.js:1711 smartdns.js:1712
 msgid "Report bugs"
-msgstr "报告BUG"
+msgstr "报告 Bug"
 
 #: smartdns.js:1719
 msgid "Donate to smartdns"
-msgstr "捐助smartdns项目"
+msgstr "捐助 SmartDNS 项目"
 
 #: smartdns.js:1720
 msgid "Donate"
