@@ -298,6 +298,10 @@ return view.extend({
 		o.rmempty = false;
 		o.default = o.disabled;
 
+		o = s.taboption("advanced", form.Flag, "ddr", _("DDR"), _("Enable Discovery of Designated Resolvers for enabled local DNS services."));
+		o.rmempty = true;
+		o.default = o.disabled;
+
 		o = s.taboption("advanced", form.Value, "doh_server_port", _("DOH Server Port"), _("Smartdns DOH server port."));
 		o.placeholder = 843;
 		o.default = 843;
@@ -369,7 +373,7 @@ return view.extend({
 		o.default = o.enabled;
 
 		// resolve local hostname;
-		o = s.taboption("advanced", form.Flag, "resolve_local_hostnames", _("Resolve Local Hostnames"), _("Resolve local hostnames by reading Dnsmasq lease file."));
+		o = s.taboption("advanced", form.Flag, "resolve_local_hostnames", _("Resolve Local Hostnames"), _("Resolve local hostnames by reading Dnsmasq or odhcpd lease files."));
 		o.rmempty = false;
 		o.default = o.enabled;
 
@@ -879,7 +883,7 @@ return view.extend({
 		// Upstream servers;
 		////////////////
 		s = m.section(form.GridSection, "server", _("Upstream Servers"),
-			_("Upstream Servers, support UDP, TCP, DoT, DoH, DoQ, DoH3 protocol. Please configure multiple DNS servers, "
+			_("Upstream Servers, support UDP, TCP, TLS, HTTPS, QUIC and HTTP3 protocol. Please configure multiple DNS servers, "
 				+ "including multiple foreign DNS servers."));
 		s.anonymous = true;
 		s.addremove = true;
@@ -920,7 +924,7 @@ return view.extend({
 		o.value("tls", _("tls"));
 		o.value("https", _("https"));
 		o.value("quic", _("quic"));
-		o.value("h3", _("h3"));
+		o.value("h3", _("http3"));
 		o.default = "udp";
 		o.rempty = false;
 
@@ -1042,8 +1046,9 @@ return view.extend({
 				return _("Please set proxy server first.");
 			}
 
-			if (server_type == "udp" && !proxy_server.match(/^(socks5):\/\//)) {
-				return _("Only socks5 proxy support udp server.");
+			if ((server_type == "udp" || server_type == "quic" || server_type == "h3")
+				&& !proxy_server.match(/^(socks5):\/\//)) {
+				return _("Only socks5 proxy support UDP, QUIC and HTTP3 server.");
 			}
 
 			return true;
