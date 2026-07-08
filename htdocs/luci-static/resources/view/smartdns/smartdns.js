@@ -907,7 +907,7 @@ return view.extend({
 		o.rmempty = false;
 
 		// port;
-		o = s.taboption("general", form.Value, "port" _("DNS Server port"));
+		o = s.taboption("general", form.Value, "port", _("DNS Server port"));
 		o.placeholder = "default";
 		o.datatype = "port";
 		o.rempty = true;
@@ -917,7 +917,7 @@ return view.extend({
 		o.depends("type", "quic");
 
 		// type;
-		o = s.taboption("general", form.ListValue, "type" _("DNS Server type"));
+		o = s.taboption("general", form.ListValue, "type", _("DNS Server type"));
 		o.placeholder = "udp";
 		o.value("udp", _("udp"));
 		o.value("tcp", _("tcp"));
@@ -929,7 +929,7 @@ return view.extend({
 		o.rempty = false;
 
 		// server group
-		o = s.taboption("general", form.Value, "server_group" _("DNS Server group"))
+		o = s.taboption("general", form.Value, "server_group", _("DNS Server group"))
 		o.rmempty = true;
 		o.placeholder = "default";
 		o.datatype = "hostname";
