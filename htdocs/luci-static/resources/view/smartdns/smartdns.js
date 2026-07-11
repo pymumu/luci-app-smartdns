@@ -758,7 +758,7 @@ return view.extend({
 		so.value("ip-set", _("ip-set file (/etc/smartdns/ip-set)"));
 		so.value("other", _("other file (/etc/smartdns/download)"));
 		so.default = "list";
-		so.rempty = false;
+		so.rmempty = false;
 
 		so = ss.option(form.Value, 'desc', _('Description'), _('Description'));
 		so.rmempty = true;
