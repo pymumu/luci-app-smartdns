@@ -5,8 +5,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-smartdns
-PKG_VERSION:=1.2026.48.2
-PKG_RELEASE:=3
+PKG_VERSION:=1.2026.48.3
+PKG_RELEASE:=1
 
 PKG_LICENSE:=GPL-3.0-or-later
 PKG_MAINTAINER:=Nick Peng <pymumu@gmail.com>
