@@ -1,0 +1,83 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "SmartDNS"
+msgstr "اسمارت‌دی‌ان‌اس (SmartDNS)"
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "General Settings"
+msgstr "تنظیمات عمومی"
+
+msgid "Advanced Settings"
+msgstr "تنظیمات پیشرفته"
+
+msgid "Second Server Settings"
+msgstr "تنظیمات سرور دوم"
+
+msgid "DNS64 Server Settings"
+msgstr "تنظیمات سرور DNS64"
+
+msgid "Download Files Setting"
+msgstr "تنظیمات دریافت فایل‌ها"
+
+msgid "Proxy Server Settings"
+msgstr "تنظیمات سرور پروکسی"
+
+msgid "Custom Settings"
+msgstr "تنظیمات سفارشی"
+
+msgid "Enable"
+msgstr "فعال‌سازی"
+
+msgid "Enable or disable smartdns server"
+msgstr "فعال یا غیرفعال کردن سرویس SmartDNS"
+
+msgid "Server Name"
+msgstr "نام سرور"
+
+msgid "Local Port"
+msgstr "پورت محلی"
+
+msgid "Automatically Set Dnsmasq"
+msgstr "تنظیم خودکار Dnsmasq"
+
+msgid "Automatically set as upstream of dnsmasq when port changes."
+msgstr "تنظیم خودکار به عنوان سرور بالادست Dnsmasq هنگام تغییر پورت."
+
+msgid "Speed Check Mode"
+msgstr "حالت بررسی سرعت (Speed Check)"
+
+msgid "Proxy Server"
+msgstr "سرور پروکسی"
+
+msgid "Proxy Server URL, format: [socks5|http]://user:pass@ip:port."
+msgstr "آدرس پروکسی سرور به فرمت: [socks5|http]://user:pass@ip:port"
+
+msgid "Use Proxy"
+msgstr "استفاده از پروکسی"
+
+msgid "Use proxy to connect to upstream DNS server."
+msgstr "استفاده از تونل پروکسی برای ارسال درخواست‌های DNS به سرورهای بالادست (ضد جعل و پویزنینگ)."
+
+msgid "Upstream Servers"
+msgstr "سرورهای بالادست (Upstream Servers)"
+
+msgid "Server Name"
+msgstr "نام سرور"
+
+msgid "Server IP"
+msgstr "آدرس IP سرور"
+
+msgid "Server Port"
+msgstr "پورت سرور"
+
+msgid "Server Type"
+msgstr "نوع پروتکل (UDP/TCP/TLS/HTTPS)"
+
+msgid "RUNNING"
+msgstr "در حال اجرا"
+
+msgid "NOT RUNNING"
+msgstr "متوقف شده"
