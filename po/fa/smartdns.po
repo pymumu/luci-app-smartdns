@@ -1,83 +1,1255 @@
 msgid ""
-msgstr "Content-Type: text/plain; charset=UTF-8\n"
+msgstr ""
+"Project-Id-Version: luci-app-smartdns\n"
+"POT-Creation-Date: 2025-11-13 01:05+0000\n"
+"PO-Revision-Date: 2026-11-02 13:17+0330\n"
+"Last-Translator: ChatGPT\n"
+"Language-Team: Persian\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: ChatGPT\n"
+"X-Poedit-Basepath: ../../htdocs/luci-static/resources/view/smartdns\n"
+"X-Poedit-SearchPath-0: .\n"
 
-msgid "SmartDNS"
-msgstr "اسمارت‌دی‌ان‌اس (SmartDNS)"
+#: log.js:80
+msgid "Loading..."
+msgstr "در حال بارگذاری..."
 
-msgid "Settings"
-msgstr "تنظیمات"
+#: log.js:82 smartdns.js:146
+msgid "Collecting data ..."
+msgstr "در حال جمع‌آوری داده‌ها..."
 
-msgid "General Settings"
-msgstr "تنظیمات عمومی"
+#: log.js:92
+msgid "Clear Logs..."
+msgstr "پاک‌سازی گزارش‌ها..."
 
-msgid "Advanced Settings"
-msgstr "تنظیمات پیشرفته"
+#: log.js:95
+msgid "Logs cleared successfully!"
+msgstr "گزارش‌ها با موفقیت پاک شدند!"
 
-msgid "Second Server Settings"
-msgstr "تنظیمات سرور دوم"
+#: log.js:98 log.js:108 log.js:112
+msgid "Clear Logs"
+msgstr "پاک‌سازی گزارش‌ها"
 
-msgid "DNS64 Server Settings"
-msgstr "تنظیمات سرور DNS64"
+#: log.js:101 log.js:119
+msgid "Log is clean."
+msgstr "گزارشی برای نمایش وجود ندارد."
 
-msgid "Download Files Setting"
-msgstr "تنظیمات دریافت فایل‌ها"
+#: log.js:105
+msgid "Failed to clear log."
+msgstr "پاک‌سازی گزارش ناموفق بود."
 
-msgid "Proxy Server Settings"
-msgstr "تنظیمات سرور پروکسی"
+#: log.js:127
+msgid "Log file does not exist."
+msgstr "فایل گزارش وجود ندارد."
 
-msgid "Custom Settings"
-msgstr "تنظیمات سفارشی"
+#: log.js:129
+#, javascript-format
+msgid "Unknown error: %s"
+msgstr "خطای ناشناخته: %s"
 
-msgid "Enable"
-msgstr "فعال‌سازی"
+#: log.js:142
+msgid "Back SmartDNS"
+msgstr "بازگشت به SmartDNS"
 
-msgid "Enable or disable smartdns server"
-msgstr "فعال یا غیرفعال کردن سرویس SmartDNS"
+#: log.js:151
+#, javascript-format
+msgid "Refresh every %s seconds."
+msgstr "تازه‌سازی هر %s ثانیه."
 
-msgid "Server Name"
-msgstr "نام سرور"
-
-msgid "Local Port"
-msgstr "پورت محلی"
-
-msgid "Automatically Set Dnsmasq"
-msgstr "تنظیم خودکار Dnsmasq"
-
-msgid "Automatically set as upstream of dnsmasq when port changes."
-msgstr "تنظیم خودکار به عنوان سرور بالادست Dnsmasq هنگام تغییر پورت."
-
-msgid "Speed Check Mode"
-msgstr "حالت بررسی سرعت (Speed Check)"
-
-msgid "Proxy Server"
-msgstr "سرور پروکسی"
-
-msgid "Proxy Server URL, format: [socks5|http]://user:pass@ip:port."
-msgstr "آدرس پروکسی سرور به فرمت: [socks5|http]://user:pass@ip:port"
-
-msgid "Use Proxy"
-msgstr "استفاده از پروکسی"
-
-msgid "Use proxy to connect to upstream DNS server."
-msgstr "استفاده از تونل پروکسی برای ارسال درخواست‌های DNS به سرورهای بالادست (ضد جعل و پویزنینگ)."
-
-msgid "Upstream Servers"
-msgstr "سرورهای بالادست (Upstream Servers)"
-
-msgid "Server Name"
-msgstr "نام سرور"
-
-msgid "Server IP"
-msgstr "آدرس IP سرور"
-
-msgid "Server Port"
-msgstr "پورت سرور"
-
-msgid "Server Type"
-msgstr "نوع پروتکل (UDP/TCP/TLS/HTTPS)"
-
+#: smartdns.js:68
 msgid "RUNNING"
 msgstr "در حال اجرا"
 
+#: smartdns.js:74
+msgid "Open the WebUI"
+msgstr "باز کردن رابط وب"
+
+#: smartdns.js:77
 msgid "NOT RUNNING"
-msgstr "متوقف شده"
+msgstr "متوقف"
+
+#: smartdns.js:79
+msgid "Please check the system logs and check if the configuration is valid."
+msgstr "گزارش‌های سیستم را بررسی کنید و از معتبر بودن پیکربندی اطمینان حاصل کنید."
+
+#: smartdns.js:91
+msgid "Dnsmasq Forwarded To Smartdns Failure"
+msgstr "ارسال درخواست‌های Dnsmasq به SmartDNS ناموفق بود"
+
+#: smartdns.js:120
+msgid "SmartDNS"
+msgstr "SmartDNS"
+
+#: smartdns.js:121
+msgid "SmartDNS Server"
+msgstr "سرور SmartDNS"
+
+#: smartdns.js:122
+msgid ""
+"SmartDNS is a local high-performance DNS server, supports finding fastest "
+"IP, supports ad filtering, and supports avoiding DNS poisoning."
+msgstr "SmartDNS یک سرور DNS محلی و پربازده است که از یافتن سریع‌ترین IP، فیلترکردن تبلیغات و جلوگیری از مسموم‌سازی DNS پشتیبانی می‌کند."
+
+#: smartdns.js:153
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: smartdns.js:153 smartdns.js:156 smartdns.js:888
+msgid "General Settings"
+msgstr "تنظیمات عمومی"
+
+#: smartdns.js:157 smartdns.js:889 smartdns.js:1074
+msgid "Advanced Settings"
+msgstr "تنظیمات پیشرفته"
+
+#: smartdns.js:158
+msgid "Second Server Settings"
+msgstr "تنظیمات سرور دوم"
+
+#: smartdns.js:159
+msgid "DNS64 Server Settings"
+msgstr "تنظیمات سرور DNS64"
+
+msgid "DDR"
+msgstr "DDR"
+
+#: smartdns.js:160
+msgid "Download Files Setting"
+msgstr "تنظیمات دریافت فایل‌ها"
+
+#: smartdns.js:160
+msgid ""
+"Download domain list files for domain-rule and include config files, please "
+"refresh the page after download to take effect."
+msgstr "فایل‌های فهرست دامنه موردنیاز برای قوانین دامنه و فایل‌های پیکربندی را دریافت کنید. پس از پایان دریافت، برای اعمال تغییرات صفحه را تازه‌سازی کنید."
+
+#: smartdns.js:161
+msgid "Proxy Server Settings"
+msgstr "تنظیمات سرور پراکسی"
+
+#: smartdns.js:162
+msgid "Custom Settings"
+msgstr "تنظیمات سفارشی"
+
+#: smartdns.js:167 smartdns.js:535 smartdns.js:892 smartdns.js:1077
+#: smartdns.js:1486 smartdns.js:1677
+msgid "Enable"
+msgstr "فعال‌سازی"
+
+#: smartdns.js:167
+msgid "Enable or disable smartdns server"
+msgstr "فعال یا غیرفعال کردن سرویس SmartDNS"
+
+#: smartdns.js:172
+msgid "Server Name"
+msgstr "نام سرور"
+
+#: smartdns.js:172
+msgid "Smartdns server name"
+msgstr "نام سرور SmartDNS؛ مقدار پیش‌فرض smartdns است و در صورت خالی گذاشتن، نام میزبان استفاده می‌شود."
+
+#: smartdns.js:178 smartdns.js:541
+msgid "Local Port"
+msgstr "درگاه محلی"
+
+#: smartdns.js:179
+msgid ""
+"Smartdns local server port, smartdns will be automatically set as main dns "
+"when the port is 53."
+msgstr "درگاه محلی سرویس SmartDNS. اگر شماره درگاه 53 باشد، SmartDNS به‌طور خودکار به‌عنوان DNS اصلی تنظیم می‌شود."
+
+#: smartdns.js:186
+msgid "Automatically Set Dnsmasq"
+msgstr "تنظیم خودکار Dnsmasq"
+
+#: smartdns.js:186
+msgid "Automatically set as upstream of dnsmasq when port changes."
+msgstr "با تغییر درگاه، SmartDNS به‌طور خودکار به‌عنوان سرور بالادستی Dnsmasq تنظیم می‌شود."
+
+#: smartdns.js:192
+msgid "Enable WebUI"
+msgstr "فعال‌سازی رابط وب"
+
+#: smartdns.js:192
+msgid "Enable or disable smartdns webui plugin."
+msgstr "افزونه رابط وب SmartDNS را فعال یا غیرفعال می‌کند."
+
+#: smartdns.js:196
+msgid "WebUI Port"
+msgstr "درگاه رابط وب"
+
+#: smartdns.js:196
+msgid "WebUI server port."
+msgstr "درگاه سرور رابط وب."
+
+#: smartdns.js:202
+msgid "WebUI Data Dir"
+msgstr "مسیر داده‌های رابط وب"
+
+#: smartdns.js:202
+msgid "Directory for storing the webui database."
+msgstr "پوشه‌ای برای ذخیره پایگاه داده رابط وب."
+
+#: smartdns.js:208
+msgid "WebUI Log Retention"
+msgstr "مدت نگهداری گزارش‌های رابط وب"
+
+#: smartdns.js:208
+msgid "Number of days to retain webui logs."
+msgstr "تعداد روزهایی که گزارش‌های رابط وب نگهداری می‌شوند."
+
+#: smartdns.js:219 smartdns.js:1139 smartdns.js:1309 smartdns.js:1543
+msgid "Speed Check Mode"
+msgstr "حالت سنجش سرعت"
+
+#: smartdns.js:219 smartdns.js:1139 smartdns.js:1309 smartdns.js:1543
+msgid "Smartdns speed check mode."
+msgstr "حالت سنجش سرعت در SmartDNS."
+
+#: smartdns.js:222 smartdns.js:274 smartdns.js:806 smartdns.js:1142
+#: smartdns.js:1312 smartdns.js:1365 smartdns.js:1539 smartdns.js:1547
+msgid "default"
+msgstr "پیش‌فرض"
+
+#: smartdns.js:229 smartdns.js:1149 smartdns.js:1319 smartdns.js:1527
+#: smartdns.js:1554
+msgid "None"
+msgstr "هیچ‌کدام"
+
+#: smartdns.js:250 smartdns.js:1170 smartdns.js:1340 smartdns.js:1575
+msgid "TCP port is empty"
+msgstr "درگاه TCP خالی است."
+
+#: smartdns.js:258 smartdns.js:1178 smartdns.js:1348 smartdns.js:1583
+msgid "TCP SYN port is empty"
+msgstr "درگاه TCP SYN خالی است."
+
+#: smartdns.js:263 smartdns.js:1183 smartdns.js:1353 smartdns.js:1588
+msgid "Speed check mode is invalid."
+msgstr "حالت سنجش سرعت نامعتبر است."
+
+#: smartdns.js:270
+msgid "Response Mode"
+msgstr "حالت پاسخ‌دهی"
+
+#: smartdns.js:271
+msgid ""
+"Smartdns response mode, First Ping: return the first ping IP, Fastest IP: "
+"return the fastest IP, Fastest Response: return the fastest DNS response."
+msgstr "حالت پاسخ‌دهی SmartDNS: «اولین پاسخ پینگ»، نخستین IP دارای پاسخ پینگ را برمی‌گرداند؛ «سریع‌ترین IP»، سریع‌ترین IP را انتخاب می‌کند و ممکن است زمان جست‌وجو را افزایش دهد؛ «سریع‌ترین پاسخ»، نتیجه‌ای را برمی‌گرداند که سریع‌ترین پاسخ DNS را داشته باشد و زمان جست‌وجو را کاهش می‌دهد."
+
+#: smartdns.js:275
+msgid "First Ping"
+msgstr "اولین پاسخ پینگ"
+
+#: smartdns.js:276
+msgid "Fastest IP"
+msgstr "سریع‌ترین IP"
+
+#: smartdns.js:277
+msgid "Fastest Response"
+msgstr "سریع‌ترین پاسخ"
+
+#: smartdns.js:280 smartdns.js:548
+msgid "TCP Server"
+msgstr "سرور TCP"
+
+#: smartdns.js:280 smartdns.js:548
+msgid "Enable TCP DNS Server"
+msgstr "فعال‌سازی سرور DNS روی TCP"
+
+#: smartdns.js:285
+msgid "DOT Server"
+msgstr "سرور DoT"
+
+#: smartdns.js:285
+msgid "Enable DOT DNS Server"
+msgstr "فعال‌سازی سرور DNS روی DoT"
+
+#: smartdns.js:289
+msgid "DOT Server Port"
+msgstr "درگاه سرور DoT"
+
+#: smartdns.js:289
+msgid "Smartdns DOT server port."
+msgstr "شماره درگاه سرور DoT در SmartDNS."
+
+#: smartdns.js:297
+msgid "DOH Server"
+msgstr "سرور DoH"
+
+#: smartdns.js:297
+msgid "Enable DOH DNS Server"
+msgstr "فعال‌سازی سرور DNS روی DoH"
+
+msgid "Enable Discovery of Designated Resolvers for enabled local DNS services."
+msgstr "قابلیت کشف حل‌کننده‌های DNS تعیین‌شده را برای سرویس‌های DNS محلی فعال‌شده، فعال می‌کند."
+
+#: smartdns.js:301
+msgid "DOH Server Port"
+msgstr "درگاه سرور DoH"
+
+#: smartdns.js:301
+msgid "Smartdns DOH server port."
+msgstr "شماره درگاه سرور DoH در SmartDNS."
+
+#: smartdns.js:308
+msgid "Server Cert"
+msgstr "گواهی‌نامه سرور"
+
+#: smartdns.js:308
+msgid "Server certificate file path."
+msgstr "مسیر فایل گواهی‌نامه سرور."
+
+#: smartdns.js:315
+msgid "Server Cert Key"
+msgstr "کلید خصوصی گواهی‌نامه سرور"
+
+#: smartdns.js:315
+msgid "Server certificate key file path."
+msgstr "مسیر فایل کلید خصوصی گواهی‌نامه سرور."
+
+#: smartdns.js:322
+msgid "Server Cert Key Pass"
+msgstr "گذرواژه کلید خصوصی گواهی‌نامه سرور"
+
+#: smartdns.js:322
+msgid "Server certificate key file password."
+msgstr "گذرواژه فایل کلید خصوصی گواهی‌نامه سرور."
+
+#: smartdns.js:329
+msgid "IPv6 Server"
+msgstr "سرور IPv6"
+
+#: smartdns.js:329
+msgid "Enable IPv6 DNS Server"
+msgstr "فعال‌سازی سرور DNS مبتنی بر IPv6"
+
+#: smartdns.js:334
+msgid "Bind Device"
+msgstr "محدودسازی به رابط شبکه"
+
+#: smartdns.js:334
+msgid "Listen only on the specified interfaces."
+msgstr "سرور فقط روی رابط‌های شبکه مشخص‌شده درخواست‌ها را دریافت می‌کند."
+
+#: smartdns.js:339
+msgid "Bind Device Name"
+msgstr "نام رابط شبکه"
+
+#: smartdns.js:339
+msgid "Name of device name listen on."
+msgstr "نام رابط شبکه‌ای که سرور روی آن به درخواست‌ها گوش می‌دهد."
+
+#: smartdns.js:345 smartdns.js:1190 smartdns.js:1360 smartdns.js:1534
+msgid "Dual-stack IP Selection"
+msgstr "انتخاب IP در حالت دوپشته"
+
+#: smartdns.js:346 smartdns.js:1191 smartdns.js:1361 smartdns.js:1535
+msgid "Enable IP selection between IPv4 and IPv6"
+msgstr "انتخاب IP بین IPv4 و IPv6 را فعال می‌کند."
+
+#: smartdns.js:351
+msgid "Domain prefetch"
+msgstr "پیش‌دریافت دامنه"
+
+#: smartdns.js:352
+msgid "Enable domain prefetch, accelerate domain response speed."
+msgstr "پیش‌دریافت دامنه را فعال می‌کند تا سرعت پاسخ‌گویی به درخواست‌های دامنه افزایش یابد."
+
+#: smartdns.js:357
+msgid "Serve expired"
+msgstr "ارائه پاسخ‌های منقضی‌شده از حافظه نهان"
+
+#: smartdns.js:358
+msgid ""
+"Attempts to serve old responses from cache with a TTL of 0 in the response "
+"without waiting for the actual resolution to finish."
+msgstr "برای بهبود کارایی، هنگام دریافت درخواست تلاش می‌کند پاسخ‌های قدیمی موجود در حافظه نهان را بدون انتظار برای پایان فرایند حل نام، با TTL برابر صفر ارائه کند."
+
+#: smartdns.js:363
+msgid "Cache Size"
+msgstr "اندازه حافظه نهان"
+
+#: smartdns.js:363
+msgid "DNS domain result cache size"
+msgstr "ظرفیت حافظه نهان نتایج DNS. با تنظیم مقدار صفر، ذخیره‌سازی در حافظه نهان غیرفعال می‌شود."
+
+#: smartdns.js:367
+msgid "Cache Persist"
+msgstr "ماندگاری حافظه نهان"
+
+#: smartdns.js:367
+msgid "Write cache to disk on exit and load on startup."
+msgstr "هنگام خروج، حافظه نهان را روی دیسک ذخیره می‌کند و هنگام راه‌اندازی آن را بارگذاری می‌کند."
+
+#: smartdns.js:372
+msgid "Resolve Local Hostnames"
+msgstr "حل نام میزبان‌های محلی"
+
+#: smartdns.js:372
+msgid "Resolve local hostnames by reading Dnsmasq or odhcpd lease files."
+msgstr "با خواندن فایل‌های اجاره‌نامه Dnsmasq یا odhcpd، نام میزبان‌های محلی را حل می‌کند."
+
+#: smartdns.js:377
+msgid "mDNS Lookup"
+msgstr "جست‌وجوی mDNS"
+
+#: smartdns.js:377
+msgid "Resolve local network hostname via mDNS protocol."
+msgstr "نام میزبان‌های شبکه محلی را با پروتکل mDNS حل می‌کند."
+
+#: smartdns.js:382 smartdns.js:600 smartdns.js:1196 smartdns.js:1369
+#: smartdns.js:1594
+msgid "Force AAAA SOA"
+msgstr "بازگرداندن SOA برای درخواست‌های AAAA"
+
+#: smartdns.js:382 smartdns.js:600 smartdns.js:1196 smartdns.js:1369
+#: smartdns.js:1594
+msgid "Force AAAA SOA."
+msgstr "برای درخواست‌های رکورد AAAA، پاسخ SOA برگردانده می‌شود."
+
+#: smartdns.js:387 smartdns.js:605 smartdns.js:1201
+msgid "Force HTTPS SOA"
+msgstr "بازگرداندن SOA برای درخواست‌های HTTPS"
+
+#: smartdns.js:387 smartdns.js:605 smartdns.js:1201
+msgid "Force HTTPS SOA."
+msgstr "برای درخواست‌های رکورد HTTPS، پاسخ SOA برگردانده می‌شود."
+
+#: smartdns.js:392 smartdns.js:613 smartdns.js:1206 smartdns.js:1373
+#: smartdns.js:1600
+msgid "IPset Name"
+msgstr "نام مجموعه IPset"
+
+#: smartdns.js:392 smartdns.js:613 smartdns.js:1206 smartdns.js:1373
+#: smartdns.js:1600
+msgid "IPset name."
+msgstr "نام مجموعه IPset."
+
+#: smartdns.js:404 smartdns.js:425 smartdns.js:625 smartdns.js:1218
+#: smartdns.js:1385
+msgid "ipset name format error, format: [#[4|6]:]ipsetname"
+msgstr "قالب نام IPset نامعتبر است. قالب صحیح: [#[4|6]:]ipsetname"
+
+#: smartdns.js:412
+msgid "No Speed IPset Name"
+msgstr "نام IPset در صورت ناموفق‌بودن سنجش سرعت"
+
+#: smartdns.js:413
+msgid "Ipset name, Add domain result to ipset when speed check fails."
+msgstr "نام IPset؛ اگر سنجش سرعت ناموفق باشد، نتیجه IP مربوط به دامنه به این مجموعه IPset اضافه می‌شود."
+
+#: smartdns.js:433 smartdns.js:632 smartdns.js:1226 smartdns.js:1392
+#: smartdns.js:1606
+msgid "NFTset Name"
+msgstr "نام مجموعه NFTset"
+
+#: smartdns.js:433 smartdns.js:632 smartdns.js:1226 smartdns.js:1392
+#: smartdns.js:1606
+msgid "NFTset name, format: [#[4|6]:[family#table#set]]"
+msgstr "نام NFTset. قالب: [#[4|6]:[family#table#set]]"
+
+#: smartdns.js:445 smartdns.js:466 smartdns.js:644 smartdns.js:1238
+#: smartdns.js:1404 smartdns.js:1619
+msgid "NFTset name format error, format: [#[4|6]:[family#table#set]]"
+msgstr "قالب نام NFTset نامعتبر است. قالب صحیح: [#[4|6]:[family#table#set]]"
+
+#: smartdns.js:453
+msgid "No Speed NFTset Name"
+msgstr "نام NFTset در صورت ناموفق‌بودن سنجش سرعت"
+
+#: smartdns.js:454
+msgid ""
+"Nftset name, Add domain result to nftset when speed check fails, format: "
+"[#[4|6]:[family#table#set]]"
+msgstr "نام NFTset؛ اگر سنجش سرعت ناموفق باشد، نتیجه IP مربوط به دامنه به این مجموعه NFTset اضافه می‌شود. قالب: [#[4|6]:[family#table#set]]"
+
+#: smartdns.js:474
+msgid "Domain TTL"
+msgstr "TTL دامنه"
+
+#: smartdns.js:474
+msgid "TTL for all domain result."
+msgstr "مقدار TTL برای تمام نتایج دامنه."
+
+#: smartdns.js:478
+msgid "Domain TTL Min"
+msgstr "حداقل TTL دامنه"
+
+#: smartdns.js:479
+msgid "Minimum TTL for all domain result."
+msgstr "حداقل مقدار TTL برای تمام نتایج دامنه."
+
+#: smartdns.js:486
+msgid "Domain TTL Max"
+msgstr "حداکثر TTL دامنه"
+
+#: smartdns.js:487
+msgid "Maximum TTL for all domain result."
+msgstr "حداکثر مقدار TTL برای تمام نتایج دامنه."
+
+#: smartdns.js:491
+msgid "Reply Domain TTL Max"
+msgstr "حداکثر TTL دامنه در پاسخ"
+
+#: smartdns.js:492
+msgid "Reply maximum TTL for all domain result."
+msgstr "حداکثر مقدار TTL که برای تمام نتایج دامنه به کلاینت بازگردانده می‌شود."
+
+#: smartdns.js:496 smartdns.js:652 smartdns.js:1060
+msgid "Additional Server Args"
+msgstr "پارامترهای اضافی سرور"
+
+#: smartdns.js:497 smartdns.js:653
+msgid ""
+"Additional server args, refer to the help description of the bind option."
+msgstr "پارامترهای اضافی سرور؛ برای اطلاعات بیشتر، توضیحات راهنمای گزینه bind را ببینید."
+
+#: smartdns.js:503 smartdns.js:1247
+msgid "Include Config Files<br>/etc/smartdns/conf.d"
+msgstr "افزودن فایل‌های پیکربندی<br>/etc/smartdns/conf.d"
+
+#: smartdns.js:504 smartdns.js:1248
+msgid ""
+"Include other config files from /etc/smartdns/conf.d or custom path, can be "
+"downloaded from the download page."
+msgstr "فایل‌های پیکربندی دیگر را از مسیر /etc/smartdns/conf.d یا یک مسیر سفارشی اضافه می‌کند. امکان تنظیم دریافت خودکار این فایل‌ها از صفحه دریافت فایل‌ها وجود دارد."
+
+#: smartdns.js:517
+msgid "Hosts File"
+msgstr "فایل Hosts"
+
+#: smartdns.js:517
+msgid "Include hosts file."
+msgstr "فایل hosts را بارگذاری و در پیکربندی لحاظ می‌کند."
+
+#: smartdns.js:536
+msgid "Enable or disable second DNS server."
+msgstr "سرور DNS دوم را فعال یا غیرفعال می‌کند."
+
+#: smartdns.js:541
+msgid "Smartdns local server port"
+msgstr "درگاه محلی سرور SmartDNS"
+
+#: smartdns.js:553 smartdns.js:928 smartdns.js:1114 smartdns.js:1284
+#: smartdns.js:1494
+msgid "Server Group"
+msgstr "گروه سرورها"
+
+#: smartdns.js:554
+msgid "Query DNS through specific dns server group, such as office, home."
+msgstr "درخواست‌های DNS را از طریق یک گروه سرور مشخص، مانند office یا home، ارسال می‌کند."
+
+#: smartdns.js:560
+msgid "Skip Speed Check"
+msgstr "رد کردن سنجش سرعت"
+
+#: smartdns.js:561
+msgid "Do not check speed."
+msgstr "سنجش سرعت انجام نشود."
+
+#: smartdns.js:566
+msgid "Skip Address Rules"
+msgstr "نادیده‌گرفتن قوانین address"
+
+#: smartdns.js:567
+msgid "Skip address rules."
+msgstr "قوانین address نادیده گرفته شوند."
+
+#: smartdns.js:572
+msgid "Skip Nameserver Rule"
+msgstr "نادیده‌گرفتن قوانین Nameserver"
+
+#: smartdns.js:573
+msgid "Skip nameserver rules."
+msgstr "قوانین nameserver نادیده گرفته شوند."
+
+#: smartdns.js:578
+msgid "Skip Ipset Rule"
+msgstr "نادیده‌گرفتن قوانین ipset"
+
+#: smartdns.js:579
+msgid "Skip ipset rules."
+msgstr "قوانین ipset نادیده گرفته شوند."
+
+#: smartdns.js:584
+msgid "Skip SOA Address Rule"
+msgstr "نادیده‌گرفتن قوانین SOA مربوط به address"
+
+#: smartdns.js:585
+msgid "Skip SOA address rules."
+msgstr "قوانین SOA مربوط به address نادیده گرفته شوند."
+
+#: smartdns.js:589
+msgid "Skip Dualstack Selection"
+msgstr "رد کردن انتخاب دوپشته"
+
+#: smartdns.js:590
+msgid "Skip Dualstack Selection."
+msgstr "انتخاب در حالت دوپشته نادیده گرفته شود."
+
+#: smartdns.js:595
+msgid "Skip Cache"
+msgstr "نادیده‌گرفتن حافظه نهان"
+
+#: smartdns.js:595
+msgid "Skip Cache."
+msgstr "حافظه نهان نادیده گرفته شود."
+
+#: smartdns.js:609
+msgid "Skip IP Alias"
+msgstr "نادیده‌گرفتن نام مستعار IP"
+
+#: smartdns.js:660
+msgid "DNS64"
+msgstr "DNS64"
+
+#: smartdns.js:668
+msgid "Enable Auto Update"
+msgstr "فعال‌سازی به‌روزرسانی خودکار"
+
+#: smartdns.js:668
+msgid "Enable daily (weekly) auto update."
+msgstr "به‌روزرسانی خودکار روزانه یا هفتگی را فعال می‌کند."
+
+#: smartdns.js:673
+msgid "Update Time (Every Week)"
+msgstr "زمان به‌روزرسانی (هفتگی)"
+
+#: smartdns.js:674
+msgid "Every Day"
+msgstr "هر روز"
+
+#: smartdns.js:675
+msgid "Every Monday"
+msgstr "هر دوشنبه"
+
+#: smartdns.js:676
+msgid "Every Tuesday"
+msgstr "هر سه‌شنبه"
+
+#: smartdns.js:677
+msgid "Every Wednesday"
+msgstr "هر چهارشنبه"
+
+#: smartdns.js:678
+msgid "Every Thursday"
+msgstr "هر پنج‌شنبه"
+
+#: smartdns.js:679
+msgid "Every Friday"
+msgstr "هر جمعه"
+
+#: smartdns.js:680
+msgid "Every Saturday"
+msgstr "هر شنبه"
+
+#: smartdns.js:681
+msgid "Every Sunday"
+msgstr "هر یکشنبه"
+
+#: smartdns.js:685
+msgid "Update time (every day)"
+msgstr "زمان به‌روزرسانی (روزانه)"
+
+#: smartdns.js:691
+msgid "Upload Config File"
+msgstr "بارگذاری فایل پیکربندی"
+
+#: smartdns.js:692
+msgid "Upload smartdns config file to /etc/smartdns/conf.d"
+msgstr "فایل پیکربندی SmartDNS را در مسیر /etc/smartdns/conf.d بارگذاری می‌کند."
+
+#: smartdns.js:698
+msgid "Upload Domain List File"
+msgstr "بارگذاری فایل فهرست دامنه‌ها"
+
+#: smartdns.js:699
+msgid "Upload domain list file to /etc/smartdns/domain-set"
+msgstr "فایل فهرست دامنه‌ها را در مسیر /etc/smartdns/domain-set بارگذاری می‌کند."
+
+#: smartdns.js:705
+msgid "Upload File"
+msgstr "بارگذاری فایل"
+
+#: smartdns.js:711
+msgid "Update Files"
+msgstr "به‌روزرسانی فایل‌ها"
+
+#: smartdns.js:720
+msgid "Update"
+msgstr "به‌روزرسانی"
+
+#: smartdns.js:723
+msgid "Download Files"
+msgstr "دریافت فایل‌ها"
+
+#: smartdns.js:724
+msgid "List of files to download."
+msgstr "فهرست فایل‌هایی که باید دریافت شوند."
+
+#: smartdns.js:732
+msgid "File Name"
+msgstr "نام فایل"
+
+#: smartdns.js:736
+msgid "URL"
+msgstr "نشانی URL"
+
+#: smartdns.js:745
+msgid "URL format error, format: http:// or https://"
+msgstr "قالب URL نامعتبر است. قالب مجاز باید با http:// یا https:// آغاز شود."
+
+#: smartdns.js:751 smartdns.js:916
+msgid "type"
+msgstr "نوع"
+
+#: smartdns.js:751
+msgid "File Type"
+msgstr "نوع فایل"
+
+#: smartdns.js:752
+msgid "domain list (/etc/smartdns/domain-set)"
+msgstr "فهرست دامنه‌ها (/etc/smartdns/domain-set)"
+
+#: smartdns.js:753
+msgid "smartdns config (/etc/smartdns/conf.d)"
+msgstr "پیکربندی SmartDNS (/etc/smartdns/conf.d)"
+
+#: smartdns.js:754
+msgid "ip-set file (/etc/smartdns/ip-set)"
+msgstr "فایل مجموعه IP (/etc/smartdns/ip-set)"
+
+#: smartdns.js:755
+msgid "other file (/etc/smartdns/download)"
+msgstr "سایر فایل‌ها (/etc/smartdns/download)"
+
+#: smartdns.js:759
+msgid "Description"
+msgstr "توضیحات"
+
+#: smartdns.js:766
+msgid "Proxy Server"
+msgstr "سرور پراکسی"
+
+#: smartdns.js:766
+msgid "Proxy Server URL, format: [socks5|http]://user:pass@ip:port."
+msgstr "نشانی سرور پراکسی. قالب: [socks5|http]://user:pass@ip:port"
+
+#: smartdns.js:774
+msgid ""
+"Proxy server URL format error, format: [socks5|http]://user:pass@ip:port."
+msgstr "قالب نشانی سرور پراکسی نامعتبر است. قالب صحیح: [socks5|http]://user:pass@ip:port"
+
+#: smartdns.js:784
+msgid "smartdns custom settings"
+msgstr "تنظیمات سفارشی SmartDNS؛ برای آشنایی با پارامترهای پیکربندی، به راهنمای SmartDNS مراجعه کنید."
+
+#: smartdns.js:798
+msgid "Generate Coredump"
+msgstr "ایجاد فایل Coredump"
+
+#: smartdns.js:799
+msgid ""
+"Generate Coredump file when smartdns crash, coredump file is located at /tmp/"
+"smartdns.xxx.core."
+msgstr "در صورت ازکارافتادن SmartDNS، فایل Coredump ایجاد می‌شود. این فایل در مسیر /tmp/smartdns.xxx.core قرار می‌گیرد."
+
+#: smartdns.js:803
+msgid "Log Level"
+msgstr "سطح گزارش‌گیری"
+
+#: smartdns.js:815
+msgid "Log Output Mode"
+msgstr "حالت خروجی گزارش"
+
+#: smartdns.js:818 smartdns.js:859
+msgid "file"
+msgstr "فایل"
+
+#: smartdns.js:819 smartdns.js:860
+msgid "syslog"
+msgstr "گزارش سیستمی (syslog)"
+
+#: smartdns.js:821
+msgid "Log Size"
+msgstr "اندازه گزارش"
+
+#: smartdns.js:826
+msgid "Log Number"
+msgstr "تعداد فایل‌های گزارش"
+
+#: smartdns.js:831
+msgid "Log File"
+msgstr "مسیر فایل گزارش"
+
+#: smartdns.js:836 smartdns.js:844
+msgid "View Log"
+msgstr "مشاهده گزارش"
+
+#: smartdns.js:851
+msgid "Enable Audit Log"
+msgstr "فعال‌سازی گزارش ممیزی"
+
+#: smartdns.js:856
+msgid "Audit Log Output Mode"
+msgstr "حالت خروجی گزارش ممیزی"
+
+#: smartdns.js:863
+msgid "Audit Log Size"
+msgstr "اندازه گزارش ممیزی"
+
+#: smartdns.js:868
+msgid "Audit Log Number"
+msgstr "تعداد فایل‌های گزارش ممیزی"
+
+#: smartdns.js:873
+msgid "Audit Log File"
+msgstr "مسیر فایل گزارش ممیزی"
+
+#: smartdns.js:881
+msgid "Upstream Servers"
+msgstr "سرورهای بالادستی"
+
+#: smartdns.js:882
+msgid ""
+"Upstream Servers, support UDP, TCP, TLS, HTTPS, QUIC and HTTP3 protocol. "
+"Please configure multiple DNS servers, including multiple foreign DNS "
+"servers."
+msgstr "سرورهای DNS بالادستی از پروتکل‌های UDP، TCP، TLS، HTTPS، QUIC و HTTP/3 پشتیبانی می‌کنند. چند سرور DNS پیکربندی کنید و در میان آن‌ها چند سرور DNS خارجی نیز قرار دهید."
+
+#: smartdns.js:898
+msgid "DNS Server Name"
+msgstr "نام سرور DNS"
+
+#: smartdns.js:901
+msgid "ip"
+msgstr "IP"
+
+#: smartdns.js:901
+msgid "DNS Server ip"
+msgstr "IP سرور DNS"
+
+#: smartdns.js:906
+msgid "port"
+msgstr "درگاه"
+
+#: smartdns.js:906
+msgid "DNS Server port"
+msgstr "درگاه سرور DNS"
+
+#: smartdns.js:916
+msgid "DNS Server type"
+msgstr "نوع پروتکل سرور DNS"
+
+#: smartdns.js:918
+msgid "udp"
+msgstr "udp"
+
+#: smartdns.js:919
+msgid "tcp"
+msgstr "tcp"
+
+#: smartdns.js:920
+msgid "tls"
+msgstr "tls"
+
+#: smartdns.js:921
+msgid "https"
+msgstr "https"
+
+#: smartdns.js:922
+msgid "quic"
+msgstr "quic"
+
+#: smartdns.js:923
+msgid "http3"
+msgstr "http3"
+
+#: smartdns.js:928
+msgid "DNS Server group"
+msgstr "گروه سرور DNS"
+
+#: smartdns.js:947
+msgid "Exclude Default Group"
+msgstr "خارج‌کردن از گروه پیش‌فرض"
+
+#: smartdns.js:947
+msgid "Exclude DNS Server from default group."
+msgstr "این سرور DNS را از گروه پیش‌فرض خارج می‌کند."
+
+#: smartdns.js:954
+msgid "IP Blacklist Filtering"
+msgstr "فیلترکردن فهرست سیاه IP"
+
+#: smartdns.js:955
+msgid "Filtering IP with blacklist"
+msgstr "IPها را با استفاده از فهرست سیاه فیلتر می‌کند."
+
+#: smartdns.js:961
+msgid "TLS Hostname Verify"
+msgstr "بررسی نام میزبان TLS"
+
+#: smartdns.js:962
+msgid "Set TLS hostname to verify."
+msgstr "نام میزبان TLS را برای بررسی اعتبار گواهی تعیین می‌کند."
+
+#: smartdns.js:973
+msgid "No check certificate"
+msgstr "عدم بررسی گواهی‌نامه"
+
+#: smartdns.js:974
+msgid "Do not check certificate."
+msgstr "اعتبار گواهی‌نامه بررسی نشود."
+
+#: smartdns.js:984
+msgid "TLS SNI name"
+msgstr "نام SNI در TLS"
+
+#: smartdns.js:985
+msgid "Sets the server name indication for query. '-' for disable SNI name."
+msgstr "نام SNI سرور را برای درخواست تعیین می‌کند. برای غیرفعال‌کردن SNI، مقدار '-' را وارد کنید."
+
+#: smartdns.js:996
+msgid "HTTP Host"
+msgstr "میزبان HTTP"
+
+#: smartdns.js:997
+msgid ""
+"Set the HTTP host used for the query. Use this parameter when the host of "
+"the URL address is an IP address."
+msgstr "مقدار Host در HTTP را برای درخواست تعیین می‌کند. هنگامی از این پارامتر استفاده کنید که میزبان موجود در نشانی URL یک آدرس IP باشد."
+
+#: smartdns.js:1006
+msgid "TLS SPKI Pinning"
+msgstr "تثبیت اثرانگشت SPKI در TLS"
+
+#: smartdns.js:1007
+msgid ""
+"Used to verify the validity of the TLS server, The value is Base64 encoded "
+"SPKI fingerprint, leaving blank to indicate that the validity of TLS is not "
+"verified."
+msgstr "برای بررسی اعتبار سرور TLS استفاده می‌شود. مقدار آن اثرانگشت SPKI کدگذاری‌شده با Base64 است. خالی گذاشتن این فیلد به معنی انجام‌نشدن بررسی اعتبار TLS است."
+
+#: smartdns.js:1019
+msgid "Marking Packets"
+msgstr "علامت‌گذاری بسته‌ها"
+
+#: smartdns.js:1020
+msgid "Set mark on packets."
+msgstr "برای بسته‌ها علامت (mark) تعیین می‌کند."
+
+#: smartdns.js:1027
+msgid "Use Proxy"
+msgstr "استفاده از پراکسی"
+
+#: smartdns.js:1028
+msgid "Use proxy to connect to upstream DNS server."
+msgstr "برای اتصال به سرور DNS بالادستی از پراکسی استفاده می‌کند."
+
+#: smartdns.js:1042
+msgid "Please set proxy server first."
+msgstr "ابتدا سرور پراکسی را تنظیم کنید."
+
+#: smartdns.js:1046
+msgid "Only socks5 proxy support UDP, QUIC and HTTP3 server."
+msgstr "فقط پراکسی SOCKS5 از سرورهای UDP، QUIC و HTTP/3 پشتیبانی می‌کند."
+
+#: smartdns.js:1053
+msgid "Fallback"
+msgstr "سرور جایگزین"
+
+#: smartdns.js:1054
+msgid ""
+"Mark this server as a fallback server, use it only when default servers fail."
+msgstr "این سرور را به‌عنوان سرور جایگزین مشخص می‌کند تا فقط هنگام ازکارافتادن سرورهای پیش‌فرض استفاده شود."
+
+#: smartdns.js:1061
+msgid "Additional Args for upstream dns servers"
+msgstr "پارامترهای اضافی سرورهای DNS بالادستی"
+
+#: smartdns.js:1069
+msgid "Client Rules"
+msgstr "قوانین کلاینت"
+
+#: smartdns.js:1069
+msgid "Client Rules Settings, can achieve parental control functionality."
+msgstr "تنظیمات قوانین کلاینت؛ از این قابلیت می‌توان برای کنترل والدین استفاده کرد."
+
+#: smartdns.js:1073
+msgid "Basic Settings"
+msgstr "تنظیمات پایه"
+
+#: smartdns.js:1075 smartdns.js:1277
+msgid "DNS Block Setting"
+msgstr "تنظیمات مسدودسازی DNS"
+
+#: smartdns.js:1081
+msgid "Client Address"
+msgstr "نشانی کلاینت"
+
+#: smartdns.js:1082
+msgid ""
+"If a client address is specified, only that client will apply this rule. You "
+"can enter an IP address, such as 1.2.3.4, or a MAC address, such as aa:bb:cc:"
+"dd:ee:ff."
+msgstr "اگر نشانی یک کلاینت مشخص شود، این قانون فقط برای همان کلاینت اعمال خواهد شد. می‌توانید یک نشانی IP مانند 1.2.3.4 یا یک نشانی MAC مانند aa:bb:cc:dd:ee:ff وارد کنید."
+
+#: smartdns.js:1103
+msgid "Client address format error, please input ip adress or mac address."
+msgstr "قالب نشانی کلاینت نامعتبر است. لطفاً نشانی IP یا MAC وارد کنید."
+
+#: smartdns.js:1106
+msgid "Client Address File"
+msgstr "فایل نشانی‌های کلاینت"
+
+#: smartdns.js:1107
+msgid "Upload client address file, same as Client Address function."
+msgstr "فایل نشانی کلاینت‌ها را بارگذاری می‌کند؛ عملکرد آن مشابه گزینه «نشانی کلاینت» است."
+
+#: smartdns.js:1114 smartdns.js:1284 smartdns.js:1494
+msgid "DNS Server group belongs to, such as office, home."
+msgstr "گروه سروری را که این DNS به آن تعلق دارد مشخص کنید؛ برای مثال office یا home."
+
+#: smartdns.js:1134 smartdns.js:1304 smartdns.js:1514
+#, javascript-format
+msgid "Server Group %s not exists"
+msgstr "گروه سرور %s وجود ندارد."
+
+#: smartdns.js:1261 smartdns.js:1418 smartdns.js:1448 smartdns.js:1518
+msgid "Domain List File"
+msgstr "فایل فهرست دامنه‌ها"
+
+#: smartdns.js:1261 smartdns.js:1448
+msgid "Upload domain list file."
+msgstr "فایل فهرست دامنه‌ها را بارگذاری می‌کند."
+
+#: smartdns.js:1272
+msgid "Domain Rules"
+msgstr "قوانین دامنه"
+
+#: smartdns.js:1272
+msgid "Domain Rules Settings"
+msgstr "تنظیمات قوانین دامنه"
+
+#: smartdns.js:1276
+msgid "DNS Forwarding Setting"
+msgstr "تنظیمات هدایت DNS"
+
+#: smartdns.js:1278 smartdns.js:1476
+msgid "Domain Rule List"
+msgstr "فهرست قوانین دامنه"
+
+#: smartdns.js:1278
+msgid "Set Specific domain rule list."
+msgstr "فهرست قوانین را برای دامنه‌های مشخص تعیین می‌کند."
+
+#: smartdns.js:1279
+msgid "Domain Address"
+msgstr "نشانی دامنه"
+
+#: smartdns.js:1279
+msgid "Set Specific domain ip address."
+msgstr "نشانی IP مشخصی را برای دامنه تعیین می‌کند."
+
+#: smartdns.js:1366 smartdns.js:1540
+msgid "Yes"
+msgstr "بله"
+
+#: smartdns.js:1367 smartdns.js:1541
+msgid "No"
+msgstr "خیر"
+
+#: smartdns.js:1412 smartdns.js:1627 smartdns.js:1724
+msgid "Additional Rule Flag"
+msgstr "پرچم‌های اضافی قانون"
+
+#: smartdns.js:1413 smartdns.js:1628
+msgid ""
+"Additional Flags for rules, read help on domain-rule for more information."
+msgstr "پرچم‌های اضافی قوانین. برای اطلاعات بیشتر، راهنمای domain-rule را مطالعه کنید."
+
+#: smartdns.js:1419 smartdns.js:1519
+msgid ""
+"Upload domain list file, or configure auto download from Download File "
+"Setting page."
+msgstr "فایل فهرست دامنه‌ها را بارگذاری کنید یا دریافت خودکار آن را در صفحه تنظیمات دریافت فایل‌ها پیکربندی کنید."
+
+#: smartdns.js:1427 smartdns.js:1456
+msgid "Domain List"
+msgstr "فهرست دامنه‌ها"
+
+#: smartdns.js:1427
+msgid "Configure forwarding domain name list."
+msgstr "فهرست نام دامنه‌هایی را که باید هدایت شوند پیکربندی می‌کند."
+
+#: smartdns.js:1456
+msgid "Configure block domain list."
+msgstr "فهرست دامنه‌های مسدودشده را پیکربندی می‌کند."
+
+#: smartdns.js:1477
+msgid "Configure domain rule list."
+msgstr "فهرست قوانین دامنه را پیکربندی می‌کند."
+
+#: smartdns.js:1492
+msgid "Domain Rule Name"
+msgstr "نام قانون دامنه"
+
+#: smartdns.js:1525
+msgid "Block domain"
+msgstr "مسدودسازی دامنه"
+
+#: smartdns.js:1525
+msgid "Block domain."
+msgstr "دامنه را مسدود می‌کند."
+
+#: smartdns.js:1638
+msgid ""
+"Specify an IP address to return for any host in the given domains, Queries "
+"in the domains are never forwarded and always replied to with the specified "
+"IP address which may be IPv4 or IPv6."
+msgstr "یک نشانی IP تعیین کنید تا برای تمام میزبان‌های دامنه‌های مشخص‌شده بازگردانده شود. درخواست‌های این دامنه‌ها هرگز به سرور بالادستی هدایت نمی‌شوند و همیشه با همان نشانی IP تعیین‌شده پاسخ داده می‌شوند؛ این نشانی می‌تواند IPv4 یا IPv6 باشد."
+
+#: smartdns.js:1657
+msgid "IP Rules"
+msgstr "قوانین IP"
+
+#: smartdns.js:1657
+msgid "IP Rules Settings"
+msgstr "تنظیمات قوانین IP"
+
+#: smartdns.js:1661 smartdns.js:1667
+msgid "IP Rule List"
+msgstr "فهرست قوانین IP"
+
+#: smartdns.js:1661
+msgid "Set Specific ip rule list."
+msgstr "فهرست قوانین را برای IPهای مشخص تعیین می‌کند."
+
+#: smartdns.js:1662
+msgid "IP Blacklist"
+msgstr "فهرست سیاه IP"
+
+#: smartdns.js:1662
+msgid "Set Specific ip blacklist."
+msgstr "فهرست سیاه IPهای مشخص را تعیین می‌کند."
+
+#: smartdns.js:1668
+msgid "Configure ip rule list."
+msgstr "فهرست قوانین IP را پیکربندی می‌کند."
+
+#: smartdns.js:1683
+msgid "IP Rule Name"
+msgstr "نام قانون IP"
+
+#: smartdns.js:1687
+msgid "IP Set File"
+msgstr "فایل مجموعه IP"
+
+#: smartdns.js:1687
+msgid "Upload IP set file."
+msgstr "فایل مجموعه IP را بارگذاری می‌کند."
+
+#: smartdns.js:1693
+msgid "IP Addresses"
+msgstr "نشانی‌های IP"
+
+#: smartdns.js:1693
+msgid "IP addresses, CIDR format."
+msgstr "نشانی‌های IP با قالب CIDR."
+
+#: smartdns.js:1698
+msgid "Whitelist IP"
+msgstr "فهرست سفید IP"
+
+#: smartdns.js:1698
+msgid "Whitelist IP Rule, Accept IP addresses within the range."
+msgstr "قانون فهرست سفید IP؛ نشانی‌های IP در محدوده تعیین‌شده پذیرفته می‌شوند."
+
+#: smartdns.js:1703
+msgid "Blacklist IP"
+msgstr "فهرست سیاه IP"
+
+#: smartdns.js:1703
+msgid "Blacklist IP Rule, Decline IP addresses within the range."
+msgstr "قانون فهرست سیاه IP؛ نشانی‌های IP در محدوده تعیین‌شده رد می‌شوند."
+
+#: smartdns.js:1708
+msgid "Ignore IP"
+msgstr "نادیده‌گرفتن IP"
+
+#: smartdns.js:1708
+msgid "Do not use these IP addresses."
+msgstr "از این نشانی‌های IP استفاده نکن."
+
+#: smartdns.js:1713
+msgid "Bogus nxdomain"
+msgstr "پاسخ جعلی NXDOMAIN"
+
+#: smartdns.js:1713
+msgid "Return SOA when the requested result contains a specified IP address."
+msgstr "اگر نتیجه درخواست شامل یک نشانی IP مشخص‌شده باشد، پاسخ SOA برگردانده می‌شود."
+
+#: smartdns.js:1718
+msgid "IP alias"
+msgstr "نام مستعار IP"
+
+#: smartdns.js:1718
+msgid ""
+"IP Address Mapping, Can be used for CDN acceleration with Anycast IP, such "
+"as Cloudflare's CDN."
+msgstr "نگاشت نشانی IP؛ می‌توان از آن برای شتاب‌دهی CDNهایی که از IP از نوع Anycast استفاده می‌کنند، مانند CDN کلودفلر، بهره برد."
+
+#: smartdns.js:1725
+msgid "Additional Flags for rules, read help on ip-rule for more information."
+msgstr "پرچم‌های اضافی قوانین. برای اطلاعات بیشتر، راهنمای ip-rule را مطالعه کنید."
+
+#: smartdns.js:1734
+msgid ""
+"Configure IP blacklists that will be filtered from the results of specific "
+"DNS server."
+msgstr "فهرست‌های سیاه IP را پیکربندی می‌کند تا این نشانی‌ها از نتایج سرور DNS مشخص‌شده حذف شوند."
+
+#: smartdns.js:1751
+msgid "Technical Support"
+msgstr "پشتیبانی فنی"
+
+#: smartdns.js:1752
+msgid "If you like this software, please buy me a cup of coffee."
+msgstr "اگر این نرم‌افزار را مفید می‌دانید، با حمایت مالی و خرید یک فنجان قهوه از توسعه‌دهنده پشتیبانی کنید."
+
+#: smartdns.js:1756
+msgid "SmartDNS official website"
+msgstr "وب‌سایت رسمی SmartDNS"
+
+#: smartdns.js:1757
+msgid "open website"
+msgstr "باز کردن وب‌سایت"
+
+#: smartdns.js:1764 smartdns.js:1765
+msgid "Report bugs"
+msgstr "گزارش اشکال‌ها"
+
+#: smartdns.js:1772
+msgid "Donate to smartdns"
+msgstr "حمایت مالی از پروژه SmartDNS"
+
+#: smartdns.js:1773
+msgid "Donate"
+msgstr "حمایت مالی"
+
+#: smartdns.js:1779
+msgid "Restart Service"
+msgstr "راه‌اندازی مجدد سرویس"
+
+#: smartdns.js:1788
+msgid "Restart"
+msgstr "راه‌اندازی مجدد"
+
+#~ msgid "Grant access to LuCI app smartdns"
+#~ msgstr "اعطای دسترسی به برنامه LuCI با نام smartdns"
