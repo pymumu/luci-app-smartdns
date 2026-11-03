@@ -180,7 +180,7 @@ return view.extend({
 		o.placeholder = 53;
 		o.default = 53;
 		o.datatype = "port";
-		o.rempty = false;
+		o.rmempty = false;
 
 		// auto-conf-dnsmasq;
 		o = s.taboption("settings", form.Flag, "auto_set_dnsmasq", _("Automatically Set Dnsmasq"), _("Automatically set as upstream of dnsmasq when port changes."));
@@ -196,19 +196,19 @@ return view.extend({
 			o = s.taboption("settings", form.Value, "ui_port", _("WebUI Port"), _("WebUI server port."));
 			o.placeholder = 6080;
 			o.datatype = "port";
-			o.rempty = false;
+			o.rmempty = false;
 			o.depends('ui', '1');
 
 			o = s.taboption("settings", form.Value, "ui_data_dir", _("WebUI Data Dir"), _("Directory for storing the webui database."));
 			o.placeholder = "/var/lib/smartdns";
 			o.datatype = "string";
-			o.rempty = false;
+			o.rmempty = false;
 			o.depends('ui', '1');
 
 			o = s.taboption("settings", form.Value, "ui_log_max_age", _("WebUI Log Retention"), _("Number of days to retain webui logs."));
 			o.placeholder = 30;
 			o.datatype = "uinteger";
-			o.rempty = false;
+			o.rmempty = false;
 			o.depends('ui', '1');
 		}
 
@@ -290,7 +290,7 @@ return view.extend({
 		o.placeholder = 853;
 		o.default = 853;
 		o.datatype = "port";
-		o.rempty = false;
+		o.rmempty = false;
 		o.depends('tls_server', '1');
 
 		// Enable DOH server;
@@ -306,7 +306,7 @@ return view.extend({
 		o.placeholder = 843;
 		o.default = 843;
 		o.datatype = "port";
-		o.rempty = false;
+		o.rmempty = false;
 		o.depends('doh_server', '1');
 
 		o = s.taboption("advanced", form.Value, "bind_cert", _("Server Cert"), _("Server certificate file path."));
@@ -319,13 +319,13 @@ return view.extend({
 		o = s.taboption("advanced", form.Value, "bind_cert_key", _("Server Cert Key"), _("Server certificate key file path."));
 		o.datatype = "string";
 		o.placeholder = "/var/etc/smartdns/smartdns/smartdns-key.pem"
-		o.rempty = false;
+		o.rmempty = false;
 		o.depends('tls_server', '1');
 		o.depends('doh_server', '1');
 
 		o = s.taboption("advanced", form.Value, "bind_cert_key_pass", _("Server Cert Key Pass"), _("Server certificate key file password."));
 		o.datatype = "string";
-		o.rempty = false;
+		o.rmempty = false;
 		o.depends('tls_server', '1');
 		o.depends('doh_server', '1');
 
@@ -546,7 +546,7 @@ return view.extend({
 		o.placeholder = 6553;
 		o.default = 6553;
 		o.datatype = "port";
-		o.rempty = false;
+		o.rmempty = false;
 
 		// Enable TCP server;
 		o = s.taboption("seconddns", form.Flag, "seconddns_tcp_server", _("TCP Server"), _("Enable TCP DNS Server"));
@@ -758,7 +758,7 @@ return view.extend({
 		so.value("ip-set", _("ip-set file (/etc/smartdns/ip-set)"));
 		so.value("other", _("other file (/etc/smartdns/download)"));
 		so.default = "list";
-		so.rempty = false;
+		so.rmempty = false;
 
 		so = ss.option(form.Value, 'desc', _('Description'), _('Description'));
 		so.rmempty = true;
@@ -926,7 +926,7 @@ return view.extend({
 		o.value("quic", _("quic"));
 		o.value("h3", _("http3"));
 		o.default = "udp";
-		o.rempty = false;
+		o.rmempty = false;
 
 		// server group
 		o = s.taboption("general", form.Value, "server_group", _("DNS Server group"))
@@ -1500,7 +1500,7 @@ return view.extend({
 		so.rmempty = true
 		so.placeholder = "default"
 		so.datatype = "hostname"
-		so.rempty = true
+		so.rmempty = true
 		for (const groupname of groupnames) {
 			so.value(groupname);
 		}
@@ -1524,7 +1524,7 @@ return view.extend({
 			_("Upload domain list file, or configure auto download from Download File Setting page."));
 		so.rmempty = true
 		so.datatype = "file"
-		so.rempty = true
+		so.rmempty = true
 		so.root_directory = "/etc/smartdns/domain-set"
 
 		so = ss.option(form.ListValue, "block_domain_type", _("Block domain"), _("Block domain."));
@@ -1605,13 +1605,13 @@ return view.extend({
 		so = ss.option(form.Value, "ipset_name", _("IPset Name"), _("IPset name."));
 		so.rmempty = true;
 		so.datatype = "hostname";
-		so.rempty = true;
+		so.rmempty = true;
 		so.modalonly = true;
 
 		so = ss.option(form.Value, "nftset_name", _("NFTset Name"), _("NFTset name, format: [#[4|6]:[family#table#set]]"));
 		so.rmempty = true;
 		so.datatype = "string";
-		so.rempty = true;
+		so.rmempty = true;
 		so.modalonly = true;
 		so.validate = function (section_id, value) {
 			if (value == "") {
@@ -1632,7 +1632,7 @@ return view.extend({
 		so = ss.option(form.Value, "addition_flag", _("Additional Rule Flag"),
 			_("Additional Flags for rules, read help on domain-rule for more information."))
 		so.default = ""
-		so.rempty = true
+		so.rmempty = true
 		so.modalonly = true;
 
 		///////////////////////////////////////
@@ -1729,7 +1729,7 @@ return view.extend({
 		so = ss.option(form.Value, "addition_flag", _("Additional Rule Flag"),
 			_("Additional Flags for rules, read help on ip-rule for more information."))
 		so.default = ""
-		so.rempty = true
+		so.rmempty = true
 		so.modalonly = true;
 		///////////////////////////////////////
 		// IP Blacklist;
